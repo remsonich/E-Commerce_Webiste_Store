@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>សៀវភៅគម្រោងបញ្ចប់ការសិក្សា • SN STORE (E-Commerce)</title>
+    <title>គម្រោងប្រព័ន្ធពាណិជ្ជកម្មអេឡិចត្រូនិក • SN STORE (Official Project Book)</title>
     <!-- Google Fonts Kantumruy Pro with System Fallback -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,7 @@
             z-index: 999;
             background: #ffffff;
             border-bottom: 2px solid var(--accent);
-            padding: 12px 24px;
+            padding: 10px 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -58,11 +58,11 @@
 
         .brand-title {
             font-weight: 700;
-            font-size: 16px;
+            font-size: 15px;
             color: var(--primary);
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
 
         .brand-badge {
@@ -70,13 +70,35 @@
             color: #fff;
             padding: 3px 8px;
             border-radius: 6px;
-            font-size: 12px;
+            font-size: 11.5px;
             letter-spacing: 0.5px;
+        }
+
+        .toolbar-nav {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-pill {
+            background: #faf8f5;
+            color: var(--primary);
+            border: 1px solid var(--border);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12.5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .nav-pill:hover {
+            background: var(--accent-soft);
+            border-color: var(--accent);
         }
 
         .toolbar-actions {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -84,10 +106,10 @@
             background: var(--primary);
             color: #ffffff;
             border: 1px solid var(--primary);
-            padding: 9px 20px;
+            padding: 8px 18px;
             border-radius: 8px;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 13.5px;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
@@ -106,10 +128,10 @@
             background: #ffffff;
             color: var(--primary);
             border: 1px solid var(--border);
-            padding: 9px 16px;
+            padding: 8px 14px;
             border-radius: 8px;
             font-weight: 600;
-            font-size: 13.5px;
+            font-size: 13px;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
@@ -122,7 +144,7 @@
             border-color: var(--accent);
         }
 
-        /* Document Container (Paper style) */
+        /* Document Container */
         .doc-wrapper {
             max-width: 960px;
             margin: 30px auto 80px;
@@ -131,6 +153,33 @@
             border-radius: 12px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.05);
             border: 1px solid #e8e3da;
+        }
+
+        /* Part Banner */
+        .part-header-banner {
+            background: linear-gradient(135deg, #15332d 0%, #203f3a 100%);
+            color: #ffffff;
+            padding: 30px 36px;
+            border-radius: 10px;
+            margin: 40px 0 30px;
+            border-left: 6px solid var(--accent);
+            box-shadow: 0 6px 20px rgba(21, 51, 45, 0.15);
+        }
+
+        .part-tag {
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .part-title {
+            color: #ffffff !important;
+            font-size: 24px;
+            margin: 0;
+            line-height: 1.4;
         }
 
         /* Typography */
@@ -146,9 +195,9 @@
 
         .doc-h2 {
             color: var(--primary);
-            font-size: 20px;
+            font-size: 19px;
             font-weight: 700;
-            margin-top: 40px;
+            margin-top: 36px;
             margin-bottom: 16px;
             padding-bottom: 8px;
             border-bottom: 2px solid var(--border);
@@ -159,12 +208,12 @@
 
         .h2-badge {
             color: var(--accent);
-            font-size: 18px;
+            font-size: 17px;
         }
 
         .doc-h3 {
             color: var(--primary-accent);
-            font-size: 16.5px;
+            font-size: 16px;
             font-weight: 700;
             margin-top: 24px;
             margin-bottom: 12px;
@@ -172,7 +221,7 @@
 
         .doc-h4 {
             color: var(--primary);
-            font-size: 15px;
+            font-size: 14.5px;
             font-weight: 600;
             margin-top: 16px;
             margin-bottom: 8px;
@@ -292,7 +341,7 @@
         }
 
         .diagram-title {
-            font-size: 12.5px;
+            font-size: 12px;
             font-weight: 700;
             color: var(--accent);
             text-transform: uppercase;
@@ -317,8 +366,8 @@
             body {
                 background: #ffffff !important;
                 color: #000000 !important;
-                font-size: 11pt !important;
-                line-height: 1.6 !important;
+                font-size: 10pt !important;
+                line-height: 1.5 !important;
             }
             .doc-wrapper {
                 max-width: 100% !important;
@@ -327,8 +376,21 @@
                 box-shadow: none !important;
                 border: none !important;
             }
-            .doc-h2 {
+            .part-header-banner {
                 page-break-before: always;
+                background: #f0ede6 !important;
+                color: #000 !important;
+                border: 2px solid #333 !important;
+                box-shadow: none !important;
+            }
+            .part-title {
+                color: #000 !important;
+            }
+            .part-tag {
+                color: #555 !important;
+            }
+            .doc-h2 {
+                page-break-before: auto;
                 border-bottom: 1px solid #999 !important;
                 color: #000 !important;
             }
@@ -348,7 +410,7 @@
             }
             @page {
                 size: A4;
-                margin: 20mm 15mm;
+                margin: 16mm 12mm;
             }
         }
     </style>
@@ -358,49 +420,376 @@
     <header class="top-toolbar">
         <div class="brand-title">
             <i class="fas fa-book-bookmark" style="color: var(--accent);"></i>
-            <span>សៀវភៅគម្រោង E-Commerce • SN STORE</span>
-            <span class="brand-badge">Academic Project Book</span>
+            <span>SN STORE • Project Book</span>
+            <span class="brand-badge">Academic Documentation</span>
         </div>
+        <nav class="toolbar-nav">
+            <a href="#part-1" class="nav-pill">📑 Midterm 1 (W8)</a>
+            <a href="#part-2" class="nav-pill">🚀 Final (W14)</a>
+            <a href="#part-3" class="nav-pill">📖 Project Book (10 Chapters)</a>
+        </nav>
         <div class="toolbar-actions">
             <button class="btn-print" onclick="window.print()">
-                <i class="fas fa-file-pdf"></i> បោះពុម្ព ឬ Save ជា PDF (Ctrl + P)
+                <i class="fas fa-file-pdf"></i> Print / Save as PDF
             </button>
-            <a href="PROJECT_DOCUMENTATION.md" class="btn-secondary">
-                <i class="fab fa-markdown"></i> Markdown File
+            <a href="PROJECT_BOOK.pdf" download class="btn-secondary">
+                <i class="fas fa-download"></i> PDF File
             </a>
             <a href="https://github.com/remsonich/E-Commerce_Webiste_Store" target="_blank" class="btn-secondary">
-                <i class="fab fa-github"></i> GitHub Repo
+                <i class="fab fa-github"></i> GitHub
             </a>
         </div>
     </header>
 
     <main class="doc-wrapper">
-<h1 class="doc-h1">📘 សៀវភៅគម្រោងបញ្ចប់ការសិក្សា (E-Commerce Project Book)</h1>
-<h2 class="doc-h2"><span class="h2-badge">§</span> ប្រព័ន្ធគ្រប់គ្រង និងលក់សម្លៀកបំពាក់ទាន់សម័យតាមប្រព័ន្ធអេឡិចត្រូនិក</h2>
-<h3 class="doc-h3">SN STORE E-COMMERCE PLATFORM</h3>
+<h1 class="doc-h1">📘 គម្រោងប្រព័ន្ធពាណិជ្ជកម្មអេឡិចត្រូនិក • SN STORE (E-Commerce Project)</h1>
+<h2 class="doc-h2"><span class="h2-badge">§</span> ឯកសាររៀបចំគម្រោង ការអភិវឌ្ឍ និងសៀវភៅគម្រោងផ្លូវការ (Official Project Flow &amp; Documentation)</h2>
+<hr class="section-divider">
+
+                <div class="part-header-banner" id="part-1">
+                    <div class="part-tag"><i class="fas fa-bookmark"></i> OFFICIAL SUBMISSION MILESTONE</div>
+                    <h1 class="part-title">📑 ផ្នែកទី ១: MIDTERM 1 – Project Planning &amp; Design</h1>
+                </div>
+<blockquote class="doc-quote"><i class="fas fa-info-circle"></i> <strong>រៀបចំគម្រោង និង Design ប្រព័ន្ធ មុនចាប់ផ្តើម Development (Week 8 Submission)</strong></blockquote>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 1. Business (អាជីវកម្ម)</h2>
+<ul class="doc-ul">
+<li><strong>Business / Shop Name (ឈ្មោះអាជីវកម្ម / ហាង):</strong></li>
+<li><strong>SN STORE</strong> — ហាងលក់សម្លៀកបំពាក់ និងគ្រឿងតុបតែងម៉ូដទាន់សម័យតាមប្រព័ន្ធអនឡាញ (Modern Fashion &amp; Apparel E-Commerce Store)។</li>
+<li><strong>Business Idea (គំនិតអាជីវកម្ម):</strong></li>
+<li>បង្កើតវេបសាយពាណិជ្ជកម្មអេឡិចត្រូនិកបែប B2C ទំនើបមួយ ដើម្បីដោះស្រាយបញ្ហាការលក់សម្លៀកបំពាក់តាមបណ្តាញសង្គមបែបបុរាណ (ដូចជាការឆ្លើយឆាតដោយដៃ, ការគ្រប់គ្រងស្តុកមិនច្បាស់លាស់ និងការពិបាកផ្ទៀងផ្ទាត់វិក្កយបត្របង់ប្រាក់)។ SN STORE ផ្តល់នូវប្រព័ន្ធស្វ័យប្រវត្តិកម្ម ដែលអតិថិជនអាចមើលស្តុកទំនិញជាក់ស្តែង គណនាតម្លៃបញ្ចុះ បញ្ចូលរទេះទំនិញ បង់ប្រាក់តាមបាគង KHQR និងទទួលបានសារបញ្ជាក់ការបញ្ជាទិញភ្លាមៗ។</li>
+<li><strong>Products / Services (ផលិតផល និងសេវាកម្ម):</strong></li>
+<li><strong>Men&#x27;s Collection:</strong> អាវយឺត (T-Shirts), អាវក្រណាត់ Flannel, ខោខូវប៊យ (Denim Jeans), ស្បែកជើង Suede Chelsea Boots។</li>
+<li><strong>Women&#x27;s Collection:</strong> រ៉ូបប្រណីត (Floral &amp; Evening Dresses), អាវយឺតកក្អម (Turtleneck Tops), អាវវាល Lace Trim, ខោសាច់ក្រណាត់ទាន់សម័យ។</li>
+<li><strong>Fashion Accessories:</strong> មួកម៉ូដ, ខ្សែក្រវាត់ស្បែក, កាបូបយួរ, វ៉ែនតាការពារកម្តៅថ្ងៃ។</li>
+<li><strong>Promotion Services:</strong> ប័ណ្ណបញ្ចុះតម្លៃ និងគូប៉ុងពិសេស (Discount Coupons &amp; Seasonal Promos)។</li>
+<li><strong>Customer Care Service:</strong> សេវាប្រឹក្សាយោបល់ និងឆ្លើយតបសារអតិថិជនតាមរយៈទំព័រ Customer Service និង Telegram Direct Link។</li>
+<li><strong>Target Customer (អតិថិជនគោលដៅ):</strong></li>
+<li>សិស្ស និស្សិត យុវវ័យ និងបុគ្គលិកធ្វើការដែលមានបំណងទិញសម្លៀកបំពាក់ទាន់សម័យ គុណភាពល្អ និងតម្លៃសមរម្យ។</li>
+<li>អ្នកទិញទំនិញតាមទូរស័ព្ទដៃ (Mobile Shoppers) ដែលនិយមចូលចិត្តការទូទាត់ប្រាក់រហ័សតាមរយៈ Mobile Banking KHQR។</li>
+<li><strong>E-Commerce Model (គំរូពាណិជ្ជកម្មអេឡិចត្រូនិក):</strong></li>
+<li><strong>B2C (Business-to-Consumer):</strong> ហាង SN STORE ផ្គត់ផ្គង់ និងលក់ផលិតផលម៉ូដសម្លៀកបំពាក់ដោយផ្ទាល់ទៅកាន់អ្នកប្រើប្រាស់ចុងក្រោយ (End Consumers) តាមរយៈគេហទំព័រ ដោយគ្មានឈ្មួញកណ្តាល។</li>
+</ul>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 2. System Planning (ការរៀបចំផែនការប្រព័ន្ធ)</h2>
+<ul class="doc-ul">
+<li><strong>System Requirements (តម្រូវការប្រព័ន្ធ):</strong></li>
+<li><strong>User Requirements:</strong> ផ្ទៃមុខទំព័រស្រស់ស្អាត, ងាយស្រួលរកទំនិញ, បង្ហាញព័ត៌មាន និងតម្លៃច្បាស់លាស់, ដំណើរការរទេះទំនិញរលូន, បង់ប្រាក់ KHQR និងមើលប្រវត្តិ Order របស់ខ្លួនបាន។</li>
+<li><strong>Admin Requirements:</strong> ផ្ទាំងគ្រប់គ្រងទិន្នន័យ (Dashboard KPI), គ្រប់គ្រងផលិតផល (CRUD), គ្រប់គ្រងស្តុក, ផ្ទៀងផ្ទាត់វិក្កយបត្រទូទាត់ KHQR, គ្រប់គ្រងសារអតិថិជន, និងប្រព័ន្ធសុវត្ថិភាពចាក់សោ Brute-Force Rate Limiting។</li>
+<li><strong>Technical Requirements:</strong> Web Server Apache (XAMPP), PHP 8.x, MySQL 8.x / MariaDB, JavaScript ES6, Semantic HTML5, CSS3 Theme Variables (Light/Dark Mode), និង Git Version Control។</li>
+<li><strong>Main Features (មុខងារចម្បងៗ):</strong></li>
+<li>Dynamic Product Catalog &amp; Search Filter (ច្រោះតាមប្រភេទ Men/Women/Accessories)</li>
+<li>Real-time Interactive Shopping Cart Drawer (+/- Quantity, Remove, Subtotal Calculation)</li>
+<li>Coupon &amp; Discount Engine (បញ្ចុះតម្លៃតាមភាគរយ % ឬចំនួនទឹកប្រាក់ $)</li>
+<li>Checkout &amp; KHQR Dynamic QR Generation</li>
+<li>Customer Order Receipt Upload &amp; Verification Flow</li>
+<li>Authentication System (Customer Register/Login, Password Hashing, Google One-Tap Login)</li>
+<li>Customer Profile &amp; Real-time Order Tracking</li>
+<li>Customer Service Messaging Center</li>
+<li>Multilingual Toggle (ភាសាខ្មែរ - ភាសាអង់គ្លេស i18n)</li>
+<li>Theme Switcher (Light Mode &amp; Dark Mode ដោយគ្មានការព្រិចភ្នែក)</li>
+<li>Backoffice Dashboard &amp; Inventory Management</li>
+<li><strong>User Roles (តួនាទីអ្នកប្រើប្រាស់):</strong></li>
+</ul>
+<ol class="doc-ol">
+<li><strong>ភ្ញៀវ (Guest):</strong> មើលផលិតផល, ស្វែងរក, ច្រោះតាមប្រភេទ, ដាក់ទំនិញក្នុង Cart, ចុះឈ្មោះគណនីថ្មី។</li>
+<li><strong>អតិថិជន (Customer/Registered User):</strong> ចូលគណនី (Email/Password ឬ Google), ធ្វើការ Checkout, បង់ប្រាក់តាម KHQR, Upload វិក្កយបត្រ, តាមដានស្ថានភាព Order, និងកែប្រែ Profile។</li>
+<li><strong>អ្នកគ្រប់គ្រង (Store Admin / Super Admin):</strong> ចូល Dashboard, គ្រប់គ្រងផលិតផល (+/- ស្តុក), ផ្ទៀងផ្ទាត់ការបង់ប្រាក់, ផ្លាស់ប្តូរស្ថានភាព Order, ឆ្លើយតបសារ, កែប្រែការកំណត់ហាង និង Backup Database។</li>
+</ol>
+<ul class="doc-ul">
+<li><strong>Business Process (ដំណើរការអាជីវកម្ម):</strong></li>
+</ul>
+
+                    <div class="diagram-wrapper">
+                        <div class="diagram-title"><i class="fas fa-project-diagram"></i> Diagram / Flow Chart</div>
+                        <div class="mermaid">flowchart LR
+    A[&quot;អតិថិជនចូលមើលទំនិញ (Storefront)&quot;] --&gt; B[&quot;ជ្រើសរើសទំនិញ &amp; ដាក់ចូល Cart&quot;]
+    B --&gt; C[&quot;Checkout &amp; បំពេញព័ត៌មានដឹកជញ្ជូន&quot;]
+    C --&gt; D[&quot;ទូទាត់ប្រាក់តាម KHQR (Mock/Real)&quot;]
+    D --&gt; E[&quot;អតិថិជន Upload វិក្កយបត្របង់ប្រាក់&quot;]
+    E --&gt; F[&quot;Admin ផ្ទៀងផ្ទាត់ &amp; Confirm Order&quot;]
+    F --&gt; G[&quot;រៀបចំ និងដឹកជញ្ជូនទំនិញដល់ដៃអតិថិជន&quot;]</div>
+                    </div>
+<ul class="doc-ul">
+<li><strong>User Flow (លំហូរអ្នកប្រើប្រាស់):</strong></li>
+</ul>
+
+                    <div class="diagram-wrapper">
+                        <div class="diagram-title"><i class="fas fa-project-diagram"></i> Diagram / Flow Chart</div>
+                        <div class="mermaid">flowchart TD
+    Start([ចូលកាន់ទំព័រដើម Website]) --&gt; Browse[ស្វែងរក និងជ្រើសរើសសម្លៀកបំពាក់]
+    Browse --&gt; QuickView[បើកមើល Quick-View ឬព័ត៌មានលម្អិត]
+    QuickView --&gt; AddCart[បន្ថែមទំនិញចូលកន្ត្រក]
+    AddCart --&gt; ViewCart{ពិនិត្យកន្ត្រកទំនិញ}
+    ViewCart --&gt;|កែប្រែចំនួន| AddCart
+    ViewCart --&gt;|បន្តទិញ| Checkout[ចូលទំព័រ Checkout]
+    Checkout --&gt; FillInfo[បំពេញឈ្មោះ លេខទូរស័ព្ទ និងទីតាំង]
+    FillInfo --&gt; ChoosePay{វិធីសាស្ត្រទូទាត់}
+    ChoosePay --&gt;|KHQR Bakong| ScanKHQR[បង្ហាញកូដ KHQR &amp; បង់ប្រាក់]
+    ChoosePay --&gt;|Cash on Delivery| PlaceOrder[កុម្ម៉ង់ទិញដោយជោគជ័យ]
+    ScanKHQR --&gt; UploadReceipt[Upload រូបថតវិក្កយបត្រ]
+    UploadReceipt --&gt; PlaceOrder
+    PlaceOrder --&gt; Alert[ប្រព័ន្ធបញ្ជូនសារទៅ Telegram ម្ចាស់ហាង]
+    Alert --&gt; End([បញ្ចប់ដំណើរការទិញទំនិញ])</div>
+                    </div>
+<ul class="doc-ul">
+<li><strong>Website Sitemap (ប្លង់គេហទំព័រ):</strong></li>
+<li><strong>SN STORE Root (<code>/</code>)</strong></li>
+<li>🏠 <strong>Storefront (<code>home/index.php</code>)</strong></li>
+<li>Category Filtering (<code>?category=men|women|accessories</code>)</li>
+<li>Product Quick-View &amp; Details Modal</li>
+<li>Interactive Cart Drawer</li>
+<li>💳 <strong>Checkout Flow (<code>home/checkout.php</code>)</strong></li>
+<li>Shipping Details Form</li>
+<li>KHQR Payment Screen &amp; Receipt Upload</li>
+<li>👤 <strong>User Authentication &amp; Profile</strong></li>
+<li>Login / Register (<code>home/login.php</code>)</li>
+<li>Google Sign-In Callback</li>
+<li>Customer Dashboard (<code>home/profile.php</code>)</li>
+<li>💬 <strong>Customer Service (<code>customer-service/index.php</code>)</strong></li>
+<li>Inquiries Contact Form &amp; Live Support Links</li>
+<li>⚙️ <strong>Backoffice Admin Panel (<code>admin/</code>)</strong></li>
+<li>Admin Sign In (<code>admin/index.php</code>)</li>
+<li>Executive Dashboard (<code>admin/index.php?view=dashboard</code>)</li>
+<li>Product Management (<code>admin/index.php?view=products</code>)</li>
+<li>Order Invoicing &amp; KHQR Verification (<code>admin/operations.php</code>)</li>
+<li>Store CMS &amp; Settings (<code>admin/store-management.php</code>)</li>
+<li>Security &amp; Audit Logs (<code>admin/security.php</code>)</li>
+<li>Database Backup Utility (<code>admin/backup.php</code>)</li>
+</ul>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 3. UI Front-End E-Commerce (ចំណុចប្រទាក់អ្នកប្រើប្រាស់ផ្នែកខាងមុខ)</h2>
+<ul class="doc-ul">
+<li><strong>Products / Categories:</strong></li>
+<li>បង្ហាញបណ្តុំផលិតផលជា Grid Layout មានរូបភាពច្បាស់ៗ, ផ្លាកប្រភេទទំនិញ (Men, Women, Accessories), តម្លៃ, និងផ្លាកបញ្ចុះតម្លៃ (<code>-25%</code>)។</li>
+<li><strong>Product Details:</strong></li>
+<li>ផ្ទាំង Modal លម្អិតបង្ហាញរូបភាពទំហំធំ, ការពិពណ៌នាសាច់ក្រណាត់, ជម្រើសទំហំ (S, M, L, XL), ចំនួនស្តុកដែលនៅសល់, និងប៊ូតុង &quot;Add to Cart&quot;។</li>
+<li><strong>Search &amp; Filter:</strong></li>
+<li>របារស្វែងរកភ្លាមៗ (Instant Search) រួមជាមួយប៊ូតុង Filter ប្រភេទផលិតផលដោយមិនបាច់ Reload ទំព័រ (AJAX / Client State)។</li>
+<li><strong>Cart:</strong></li>
+<li>កន្ត្រកទំនិញរចនាជារាង Slide Drawer ចេញពីស្តាំ មានប៊ូតុងកែប្រែចំនួន (<code>+</code> / <code>-</code>), ប៊ូតុងលុបទំនិញ, បង្ហាញ Subtotal និងប៊ូតុង Checkout។</li>
+<li><strong>Checkout:</strong></li>
+<li>ទម្រង់បំពេញឈ្មោះអ្នកទទួល, លេខទូរស័ព្ទ, អាសយដ្ឋានដឹកជញ្ជូន, និងការជ្រើសរើសវិធីសាស្ត្រទូទាត់។</li>
+<li><strong>Login / Register:</strong></li>
+<li>ទម្រង់ចូលប្រើប្រាស់ដែលមានជម្រើស Login ដោយ Email/Password និង Google One-Tap Sign-In រួមជាមួយផ្ទាំងចុះឈ្មោះសមាជិកថ្មី។</li>
+<li><strong>Order:</strong></li>
+<li>ផ្ទាំងបញ្ចប់ការបញ្ជាទិញ បង្ហាញលេខកូដវិក្កយបត្រ (Order ID), បង្ហាញ QR Code សម្រាប់ស្កេន និងទម្រង់ Upload វិក្កយបត្រផ្ទៀងផ្ទាត់។</li>
+</ul>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 4. Database Design (ការរចនាមូលដ្ឋានទិន្នន័យ - Midterm 1)</h2>
+<ul class="doc-ul">
+<li><strong>Database Tables &amp; Fields (តារាង និង Field ទាំងអស់):</strong></li>
+<li>ប្រព័ន្ធប្រើប្រាស់ Relational Database (MySQL 8.x) ដែលមានតារាងសរុបចំនួន <strong>១៤ តារាង</strong> ស្របតាមកម្រិត 3NF។</li>
+<li><strong>Primary Key (PK):</strong></li>
+<li>គ្រប់តារាងទាំងអស់សុទ្ធតែមាន Primary Key អត្តសញ្ញាណតែមួយគត់ (<code>id INT AUTO_INCREMENT PRIMARY KEY</code>)។</li>
+<li><strong>Foreign Key (FK):</strong></li>
+<li><code>order_items.order_id</code> &amp;rarr; <code>orders.id</code> (ON DELETE CASCADE)</li>
+<li><code>order_items.product_id</code> &amp;rarr; <code>products.id</code> (ON DELETE RESTRICT)</li>
+<li><code>cart_items.user_id</code> &amp;rarr; <code>users.id</code> (ON DELETE CASCADE)</li>
+<li><code>cart_items.product_id</code> &amp;rarr; <code>products.id</code> (ON DELETE CASCADE)</li>
+<li><code>orders.user_id</code> &amp;rarr; <code>users.id</code> (ON DELETE SET NULL)</li>
+<li><code>products.category_id</code> &amp;rarr; <code>categories.id</code> (ON DELETE SET NULL)</li>
+<li><code>account_sessions.user_id</code> &amp;rarr; <code>users.id</code> (ON DELETE CASCADE)</li>
+<li><code>admin_sessions.admin_id</code> &amp;rarr; <code>admins.id</code> (ON DELETE CASCADE)</li>
+<li><code>admin_audit_log.admin_id</code> &amp;rarr; <code>admins.id</code> (ON DELETE SET NULL)</li>
+<li><code>customer_messages.user_id</code> &amp;rarr; <code>users.id</code> (ON DELETE SET NULL)</li>
+<li><strong>Relationships (ទំនាក់ទំនងរវាងតារាង):</strong></li>
+<li><code>users</code> &amp;harr; <code>orders</code>: <strong>1:N (One-to-Many)</strong> — អតិថិជនម្នាក់អាចបង្កើត Order ច្រើន។</li>
+<li><code>orders</code> &amp;harr; <code>order_items</code>: <strong>1:N (One-to-Many)</strong> — Order មួយមានទំនិញច្រើនមុខ។</li>
+<li><code>products</code> &amp;harr; <code>order_items</code>: <strong>1:N (One-to-Many)</strong> — ផលិតផលមួយអាចស្ថិតក្នុង Order ច្រើន។</li>
+<li><code>orders</code> &amp;harr; <code>products</code>: <strong>N:N (Many-to-Many)</strong> ភ្ជាប់តាមរយៈ Bridge Table <code>order_items</code>។</li>
+<li><code>categories</code> &amp;harr; <code>products</code>: <strong>1:N (One-to-Many)</strong> — ប្រភេទមួយមានផលិតផលច្រើន។</li>
+<li><code>users</code> &amp;harr; <code>cart_items</code>: <strong>1:N (One-to-Many)</strong> — អតិថិជនម្នាក់អាចមានទំនិញច្រើនក្នុង Cart។</li>
+<li><strong>Draw ERD (Entity Relationship Diagram):</strong></li>
+</ul>
+
+                    <div class="diagram-wrapper">
+                        <div class="diagram-title"><i class="fas fa-project-diagram"></i> Diagram / Flow Chart</div>
+                        <div class="mermaid">erDiagram
+    USERS ||--o{ ORDERS : places
+    USERS ||--o{ CART_ITEMS : maintains
+    USERS ||--o{ ACCOUNT_SESSIONS : has
+    USERS ||--o{ CUSTOMER_MESSAGES : sends
+    CATEGORIES ||--o{ PRODUCTS : categorizes
+    PRODUCTS ||--o{ ORDER_ITEMS : contains
+    PRODUCTS ||--o{ CART_ITEMS : added_to
+    ORDERS ||--|{ ORDER_ITEMS : includes
+    ADMINS ||--o{ ADMIN_SESSIONS : generates
+    ADMINS ||--o{ ADMIN_AUDIT_LOG : logs
+
+    USERS {
+        int id PK
+        string username
+        string email
+        string password
+        string name
+        string phone
+        string google_id
+    }
+    ADMINS {
+        int id PK
+        string username
+        string email
+        string password
+        string role
+        boolean is_active
+    }
+    PRODUCTS {
+        int id PK
+        int category_id FK
+        string name
+        text description
+        decimal price
+        decimal original_price
+        int stock
+        string image_url
+    }
+    CATEGORIES {
+        int id PK
+        string name
+        string slug
+    }
+    ORDERS {
+        int id PK
+        int user_id FK
+        decimal total_amount
+        string order_status
+        string payment_method
+        string receipt_image
+        datetime created_at
+    }
+    ORDER_ITEMS {
+        int id PK
+        int order_id FK
+        int product_id FK
+        int quantity
+        decimal price
+    }</div>
+                    </div>
+<ul class="doc-ul">
+<li><strong>របៀបដាក់ជូន Week 8 (Midterm 1 Submission Note):</strong></li>
+<li>ផ្នែក Business និង System Planning ត្រូវសរសេររៀបចំក្នុង Microsoft Word ឬ Export ជា PDF ភ្ជាប់ជាមួយរូបភាព Database Design (ERD Diagram)។</li>
+<li>ផ្នែក UI Front-End ត្រូវបាន Upload ឡើងទៅកាន់ Git Repository: <strong><code>https://github.com/remsonich/E-Commerce_Webiste_Store.git</code></strong>។</li>
+</ul>
+<hr class="section-divider">
+
+                <div class="part-header-banner" id="part-2">
+                    <div class="part-tag"><i class="fas fa-bookmark"></i> OFFICIAL SUBMISSION MILESTONE</div>
+                    <h1 class="part-title">🚀 ផ្នែកទី ២: FINAL – Development &amp; Implementation</h1>
+                </div>
+<blockquote class="doc-quote"><i class="fas fa-info-circle"></i> <strong>អនុវត្ត Design ពី Midterm 1 ទៅជា E-Commerce System ពេញលេញដែលដំណើរការបាន (Week 14 Submission)</strong></blockquote>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 1. Admin Panel (ផ្ទាំងគ្រប់គ្រងរបស់អ្នកគ្រប់គ្រង)</h2>
+<ul class="doc-ul">
+<li><strong>Dashboard:</strong></li>
+<li>ផ្ទាំងគ្រប់គ្រងកម្រិតប្រតិបត្តិ (Executive KPI Summary) បង្ហាញស្ថិតិសំខាន់ៗភ្លាមៗ៖</li>
+<li>ចំណូលសរុប (Total Revenue) គិតជាប្រាក់ដុល្លារ ($)</li>
+<li>ចំនួនការបញ្ជាទិញសរុប (Total Orders Count)</li>
+<li>តម្លៃទំនិញសរុបក្នុងស្តុក (Inventory Valuation)</li>
+<li>ចំនួនអតិថិជនសរុបដែលបានចុះឈ្មោះ (Total Customers)</li>
+<li>បញ្ជីការបញ្ជាទិញថ្មីៗ (Recent Orders Widget) អមដោយស្ថានភាពទូទាត់ និងលេខ Telegram</li>
+<li>ការជូនដំណឹងទំនិញជិតអស់ពីស្តុក (Low Stock Alert Widget)</li>
+<li><strong>Manage Products:</strong></li>
+<li>មុខងារពេញលេញក្នុងការបង្កើតផលិតផលថ្មី (Create), មើលបញ្ជីទំនិញ (Read), កែសម្រួលព័ត៌មាន/តម្លៃ (Update), លុបទំនិញ (Delete), និងការកែសម្រួលចំនួនស្តុកភ្លាមៗ (+/- Quick Stock Stepper)។</li>
+<li><strong>Manage Categories:</strong></li>
+<li>ចាត់ថ្នាក់ផលិតផលជាក្រុមៗ៖ សម្លៀកបំពាក់បុរស (Men), សម្លៀកបំពាក់នារី (Women), និងគ្រឿងតុបតែងម៉ូដ (Accessories)។</li>
+<li><strong>Manage Customers:</strong></li>
+<li>ពិនិត្យបញ្ជីអតិថិជន, ប្រវត្តិបញ្ជាទិញរបស់អតិថិជនម្នាក់ៗ, ព័ត៌មានទំនាក់ទំនង (Phone/Email) និងស្ថានភាពគណនី។</li>
+<li><strong>Manage Orders:</strong></li>
+<li>គ្រប់គ្រងបញ្ជាទិញ និងផ្លាស់ប្តូរស្ថានភាព Order តាមដំណាក់កាលជាក់ស្តែង៖ <code>Pending</code> &amp;rarr; <code>Paid / Confirmed</code> &amp;rarr; <code>Shipped</code> &amp;rarr; <code>Delivered</code> (ឬ <code>Cancelled</code>)។</li>
+</ul>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 2. Database (ការបង្កើត និងតភ្ជាប់មូលដ្ឋានទិន្នន័យ)</h2>
+<ul class="doc-ul">
+<li><strong>Create Database:</strong></li>
+<li>បង្កើតមូលដ្ឋានទិន្នន័យ <code>ecommerce</code> ជាមួយ Collation: <code>utf8mb4_unicode_ci</code> សម្រាប់គាំទ្រភាសាខ្មែរបាន ១០០%។</li>
+<li><strong>Create Tables:</strong></li>
+<li>បង្កើតតារាងទាំង ១៤ តាមស្តង់ដារ InnoDB Engine ក្នុងឯកសារ <code>databases/ecommerce.sql</code>។</li>
+<li><strong>Relationships:</strong></li>
+<li>បង្កើតលក្ខខណ្ឌ Foreign Key Constraints គ្រប់តារាងដើម្បីធានាភាពស៊ីសង្វាក់គ្នានៃទិន្នន័យ (Referential Integrity)។</li>
+<li><strong>Connect Database with System:</strong></li>
+<li>ឯកសារ <code>api/db.php</code> ភ្ជាប់ប្រព័ន្ធតាមរយៈ PHP MySQLi Wrapper ដែលមានមុខងារស្វ័យការពារ SQL Injection និងគាំទ្រការកំណត់តាម <code>.env</code>។</li>
+</ul>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 3. Payment (ប្រព័ន្ធទូទាត់ប្រាក់)</h2>
+<ul class="doc-ul">
+<li><strong>Payment Method (វិធីសាស្ត្រទូទាត់):</strong></li>
+</ul>
+<ol class="doc-ol">
+<li><strong>Bakong KHQR (National Bank of Cambodia Standard):</strong> ស្កេនទូទាត់ប្រាក់តាម Mobile Banking គ្រប់ធនាគារក្នុងប្រទេសកម្ពុជា។</li>
+<li><strong>Cash on Delivery (COD):</strong> ទូទាត់ប្រាក់សុទ្ធនៅពេលដឹកជញ្ជូនទំនិញដល់ដៃ។</li>
+</ol>
+<ul class="doc-ul">
+<li><strong>Payment Flow (លំហូរការទូទាត់):</strong></li>
+</ul>
+<ol class="doc-ol">
+<li>អតិថិជនជ្រើសរើសទំនិញ និងចុចប៊ូតុង Checkout។</li>
+<li>បញ្ចូលអាសយដ្ឋានដឹកជញ្ជូន និងជ្រើសរើសជម្រើសទូទាត់ &quot;KHQR Payment&quot;។</li>
+<li>ប្រព័ន្ធបង្កើតកូដ KHQR Dynamic អមជាមួយចំនួនទឹកប្រាក់សរុប ($USD)។</li>
+<li>អតិថិជនស្កេនទូទាត់ប្រាក់តាម Banking App រួច Upload រូបថតវិក្កយបត្រ (Payment Slip)។</li>
+<li>ប្រព័ន្ធកត់ត្រា Order ចូល Database, បញ្ជូនសារដំណឹងទៅកាន់ Telegram របស់ម្ចាស់ហាង និងបង្ហាញវិក្កយបត្រជូនអតិថិជន។</li>
+</ol>
+<ul class="doc-ul">
+<li><strong>Mock Payment (ការធ្វើតេស្តសាកល្បង):</strong></li>
+<li>ដោយសារស្ថិតក្នុងដំណាក់កាលសិក្សាស្រាវជ្រាវ ប្រព័ន្ធបានរៀបចំមុខងារ <strong>Mock Simulation Engine</strong> ដែលបង្កើតកូដ KHQR គំរូ និងប៊ូតុង &quot;Simulate Success&quot; ដើម្បីឱ្យសាស្ត្រាចារ្យ និងគណៈកម្មការអាចតេស្តដំណើរការទូទាត់បានភ្លាមៗដោយមិនចាំបាច់កាត់លុយពិត។</li>
+<li><strong>Payment Confirmation (ការបញ្ជាក់ការទូទាត់):</strong></li>
+<li>បន្ទាប់ពីទូទាត់ជោគជ័យ ប្រព័ន្ធបង្ហាញផ្ទាំង Success Confirmation, បង្ហាញវិក្កយបត្រ (Order Invoice Summary), និងអនុញ្ញាតឱ្យអតិថិជនទាញយកវិក្កយបត្រជា PDF។</li>
+</ul>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 4. Git / GitHub (ការគ្រប់គ្រង Source Code)</h2>
+<ul class="doc-ul">
+<li><strong>Commit Development Progress:</strong></li>
+<li>រាល់មុខងារនីមួយៗ (Frontend, Backend, Database, Security) ត្រូវបាន Commit ជាមួយសារច្បាស់លាស់ជាបន្តបន្ទាប់។</li>
+<li><strong>Push Source Code:</strong></li>
+<li>Push កូដគម្រោងទាំងអស់ឡើងទៅកាន់ GitHub Remote Repository។</li>
+<li><strong>Update README.md:</strong></li>
+<li>បានរៀបចំឯកសារ <code>README.md</code> ផ្លូវការដែលមានរៀបរាប់ពីឈ្មោះគម្រោង SN STORE, សមាជិកក្រុមទាំង ៤ រូប, មុខងារសំខាន់ៗ, ដ្យាក្រាមស្ថាបត្យកម្ម, រចនាសម្ព័ន្ធ Database, និងជំហានតម្លើង។</li>
+<li><strong>Final GitHub Repository:</strong></li>
+<li>👉 <strong><a href="https://github.com/remsonich/E-Commerce_Webiste_Store" target="_blank">https://github.com/remsonich/E-Commerce_Webiste_Store</a></strong></li>
+</ul>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 5. Testing (ការធ្វើតេស្តប្រព័ន្ធ)</h2>
+<ul class="doc-ul">
+<li><strong>Test Main Features (តេស្តមុខងារសំខាន់ៗ):</strong></li>
+<li>ធ្វើតេស្តគ្រប់សមាសភាគទាំង ១១ ចំណុច (Storefront, Cart, KHQR Checkout, Admin Auth, Product CRUD, Order Invoicing, Language Switcher, Dark Mode) — ទទួលបានលទ្ធផល <strong>PASS ១០០%</strong>។</li>
+<li><strong>Fix Errors (ការកែតម្រូវកំហុស):</strong></li>
+<li>ដោះស្រាយបញ្ហា Brute-force lockout ដោយ Reset attempts ក្នុង Database។</li>
+<li>ដោះស្រាយបញ្ហា Warning <code>session_start()</code> headers already sent ដោយប្រើ Output Buffering។</li>
+<li>ដោះស្រាយបញ្ហាពុម្ពអក្សរខ្មែរលើ Layout ឱ្យបង្ហាញស្រស់ស្អាតលើគ្រប់អេក្រង់។</li>
+<li><strong>Show Test Results (បង្ហាញលទ្ធផលតេស្ត):</strong></li>
+<li>រៀបចំជាតារាង Test Cases លម្អិត (TC-01 ដល់ TC-11) នៅក្នុងជំពូកទី ៨ នៃសៀវភៅគម្រោង។</li>
+<li><strong>របៀបដាក់ជូន Week 14 (Final Submission Note):</strong></li>
+<li>បាន Build API និង Connect ជាមួយ Front-End រួចរាល់ ១០០%។</li>
+<li>បាន Push គម្រោងពេញលេញចូលក្នុង Git Repository ជាមួយ <code>README.md</code> ផ្លូវការ និងឯកសារសៀវភៅគម្រោង <code>PROJECT_BOOK.pdf</code> ជូនលោកគ្រូ។</li>
+</ul>
+<hr class="section-divider">
+
+                <div class="part-header-banner" id="part-3">
+                    <div class="part-tag"><i class="fas fa-bookmark"></i> OFFICIAL SUBMISSION MILESTONE</div>
+                    <h1 class="part-title">📖 ផ្នែកទី ៣: របៀបសរសេរសៀវភៅសម្រាប់ E-Commerce Project</h1>
+                </div>
+<blockquote class="doc-quote"><i class="fas fa-info-circle"></i> <strong>សៀវភៅគម្រោងពេញលេញទាំង ១០ ជំពូក (The Official 10-Section Project Book)</strong></blockquote>
 <hr class="section-divider">
 <h2 class="doc-h2"><span class="h2-badge">§</span> 1. COVER (ទំព័រក្របមុខ)</h2>
 <ul class="doc-ul">
+<li><strong>Cover Book (ក្របសៀវភៅគម្រោង):</strong></li>
 <li><strong>ឈ្មោះគម្រោង (Project Name):</strong> SN STORE • Modern Fashion E-Commerce Platform</li>
-<li><strong>មុខវិជ្ជា (Subject):</strong> Web Development &amp; Database Engineering (E-Commerce Project)</li>
-<li><strong>កម្រិតសិក្សា (Level):</strong> ថ្នាក់បរិញ្ញាបត្រ / បរិញ្ញាបត្ររងផ្នែកវិទ្យាសាស្ត្រកុំព្យូទ័រ (Computer Science / IT)</li>
-<li><strong>សមាជិកក្រុម / អ្នករៀបចំ (Team Work / Authors):</strong></li>
+<li><strong>ប្រធានបទ (Subject):</strong> Web Development &amp; Database Engineering (E-Commerce Final Project)</li>
+<li><strong>កម្រិតសិក្សា (Level):</strong> ថ្នាក់បរិញ្ញាបត្រ / បរិញ្ញាបត្ររងព័ត៌មានវិទ្យា (Computer Science / IT)</li>
+<li><strong>ឆ្នាំសិក្សា (Academic Year):</strong> 2026 - 2027</li>
+<li><strong>សាស្ត្រាចារ្យណែនាំ (Lecturer):</strong> លោកគ្រូ / អ្នកគ្រូប្រចាំមុខវិជ្ជា E-Commerce System</li>
+<li><strong>Team Work (សមាសភាពសមាជិកក្រុមទាំង ៤ រូប):</strong></li>
 </ul>
 <ol class="doc-ol">
-<li><strong>REM Sonich (រ៉ែម ស៊ុននិច)</strong> — Team Leader &amp; Full Stack System Architect (GitHub: <code>remsonich</code>)</li>
-<li><strong>NHO Net (ញ៉ូ ណេត)</strong> — Backend &amp; Database Developer</li>
-<li><strong>ឆៃ សោភា (CHHAI Sophea)</strong> — Frontend Developer &amp; UI/UX Designer</li>
-<li><strong>SAO Ramorn (សៅ រ៉ាម៉ន)</strong> — Quality Assurance (QA) &amp; System Testing</li>
+<li><strong>REM Sonich (រ៉ែម ស៊ុននិច)</strong> — <em>Team Leader &amp; Full Stack System Architect</em> (GitHub: <code>remsonich</code>)</li>
+<li><strong>NHO Net (ញ៉ូ ណេត)</strong> — <em>Backend &amp; Database Developer</em></li>
+<li><strong>ឆៃ សោភា (CHHAI Sophea)</strong> — <em>Frontend Developer &amp; UI/UX Designer</em></li>
+<li><strong>SAO Ramorn (សៅ រ៉ាម៉ន)</strong> — <em>Quality Assurance (QA) &amp; System Testing</em></li>
 </ol>
-<ul class="doc-ul">
-<li><strong>សាស្ត្រាចារ្យណែនាំ (Lecturer / Advisor):</strong> លោកគ្រូ / អ្នកគ្រូប្រចាំមុខវិជ្ជា E-Commerce System</li>
-<li><strong>ឆ្នាំសិក្សា (Academic Year):</strong> 2026 - 2027</li>
-<li><strong>កាលបរិច្ឆេទដាក់ជូន (Submission):</strong> សប្តាហ៍ទី ៨ (Midterm 1) &amp; សប្តាហ៍ទី ១៤ (Final Implementation)</li>
-</ul>
 <hr class="section-divider">
 <h2 class="doc-h2"><span class="h2-badge">§</span> 1. INTRODUCTION (សេចក្តីផ្តើម)</h2>
 <h3 class="doc-h3">1.1 Project Name (ឈ្មោះគម្រោង)</h3>
-<p class="doc-p"><strong>SN STORE</strong> — វេបសាយពាណិជ្ជកម្មអេឡិចត្រូនិចលក់សម្លៀកបំពាក់ និងគ្រឿងតុបតែងម៉ូដទាន់សម័យ (Modern Curated Fashion Storefront &amp; Backoffice System)។</p>
+<p class="doc-p"><strong>SN STORE</strong> — គេហទំព័រពាណិជ្ជកម្មអេឡិចត្រូនិចលក់សម្លៀកបំពាក់ទាន់សម័យ និងប្រព័ន្ធគ្រប់គ្រងអាជីវកម្ម (Modern Curated Fashion Storefront &amp; Backoffice System)។</p>
 <h3 class="doc-h3">1.2 Project Description (ការពិពណ៌នាអំពីគម្រោង)</h3>
 <p class="doc-p">SN STORE គឺជាប្រព័ន្ធ E-Commerce ពេញលេញមួយ (Full-stack Web Application) ដែលត្រូវបានបង្កើតឡើងដើម្បីផ្តល់នូវបទពិសោធន៍ទិញទំនិញតាមអនឡាញដ៏ទំនើប ងាយស្រួល និងមានសុវត្ថិភាពខ្ពស់។ ប្រព័ន្ធនេះចែកចេញជា ២ ផ្នែកសំខាន់ៗ៖</p>
 <ol class="doc-ol">
@@ -428,7 +817,7 @@
 <li><strong>Model:</strong> <strong>B2C (Business-to-Consumer)</strong></li>
 <li>អាជីវកម្ម SN STORE លក់ផលិតផលម៉ូដសម្លៀកបំពាក់ដោយផ្ទាល់ទៅកាន់អ្នកប្រើប្រាស់ចុងក្រោយ (Direct Retail to End Consumers)។</li>
 </ul>
-<h3 class="doc-h3">2.3 Products &amp; Services (ផលិតផល និងសេវាកម្ម)</h3>
+<h3 class="doc-h3">2.3 Products / Services (ផលិតផល និងសេវាកម្ម)</h3>
 <ul class="doc-ul">
 <li><strong>Men&#x27;s Fashion:</strong> អាវយឺត, អាវសាច់ក្រណាត់ Flannel, ខោខូវប៊យ, ស្បែកជើង Suede Chelsea Boots។</li>
 <li><strong>Women&#x27;s Fashion:</strong> រ៉ូប, អាវយឺតដៃវែង Turtleneck, អាវវាល Lace Trim, ខោខូវប៊យទាន់សម័យ។</li>
@@ -437,724 +826,123 @@
 <li><strong>Customer Support:</strong> សេវាបម្រើអតិថិជន ២៤/៧ តាមទម្រង់ Contact Form និង Telegram Direct Chat។</li>
 </ul>
 <h3 class="doc-h3">2.4 Main Business Process (ដំណើរការអាជីវកម្មគោល)</h3>
-
-                    <div class="diagram-wrapper">
-                        <div class="diagram-title"><i class="fas fa-project-diagram"></i> Diagram / Flow Chart</div>
-                        <div class="mermaid">flowchart LR
-    A[&quot;អតិថិជនចូលមើលទំនិញ (Storefront)&quot;] --&gt; B[&quot;ជ្រើសរើសទំនិញ &amp; ដាក់ចូល Cart&quot;]
-    B --&gt; C[&quot;Checkout &amp; បំពេញព័ត៌មានដឹកជញ្ជូន&quot;]
-    C --&gt; D[&quot;ស្កេនទូទាត់តាម Bakong KHQR&quot;]
-    D --&gt; E[&quot;ប្រព័ន្ធផ្ញើ Order ទៅ Telegram Admin&quot;]
-    E --&gt; F[&quot;Admin ពិនិត្យវិក្កយបត្រ &amp; បញ្ជាក់ការបង់ប្រាក់&quot;]
-    F --&gt; G[&quot;វេចខ្ចប់ និងដឹកជញ្ជូនជូនអតិថិជន&quot;]</div>
-                    </div>
+<ul class="doc-ul">
+<li>អតិថិជនចូលទស្សនាទំនិញ &amp;rarr; ជ្រើសរើសទំហំ/ពណ៌ &amp;rarr; បញ្ចូលកន្ត្រកទំនិញ &amp;rarr; Checkout បំពេញព័ត៌មាន &amp;rarr; ស្កេនបង់ប្រាក់ KHQR &amp;rarr; Upload វិក្កយបត្រ &amp;rarr; Admin ផ្ទៀងផ្ទាត់ &amp;rarr; វេចខ្ចប់ និងដឹកជញ្ជូន។</li>
+</ul>
 <hr class="section-divider">
 <h2 class="doc-h2"><span class="h2-badge">§</span> 3. SYSTEM REQUIREMENTS (តម្រូវការប្រព័ន្ធ)</h2>
 <h3 class="doc-h3">3.1 Functional Requirements (តម្រូវការមុខងារ)</h3>
 <ul class="doc-ul">
-<li><strong>FR-01 (Product Browsing &amp; Filtering):</strong> អតិថិជនអាចមើលកាតាឡុកទំនិញ, ស្វែងរកតាមឈ្មោះ, និងចម្រាញ់តាមប្រភេទ (Men, Women, Accessories)។</li>
-<li><strong>FR-02 (Cart &amp; Checkout):</strong> អតិថិជនអាចបន្ថែមទំនិញក្នុងរទេះ, កែប្រែចំនួន (+/-), បញ្ចូលលេខកូដបញ្ចុះតម្លៃ (Coupon), និង Checkout។</li>
-<li><strong>FR-03 (Payment Simulation):</strong> បង្ហាញលេខកូដ QR ស្តង់ដារ KHQR Bakong និងទទួលការ Upload រូបភាពវិក្កយបត្របង់ប្រាក់។</li>
-<li><strong>FR-04 (User Authentication):</strong> ចុះឈ្មោះគណនីថ្មី, ចូលប្រើប្រាស់តាម Email/Password, ចូលតាម Google GIS 1-Click, និងទំព័រ Profile ផ្ទាល់ខ្លួន។</li>
-<li><strong>FR-05 (Admin Dashboard &amp; Analytics):</strong> បង្ហាញស្ថិតិចំណូលសរុប, ចំនួន Order, តម្លៃស្តុកទំនិញ, និងការជូនដំណឹងទំនិញជិតអស់ស្តុក។</li>
-<li><strong>FR-06 (Catalog &amp; Inventory Management):</strong> បន្ថែម, កែសម្រួល, លុប, និងកែប្រែចំនួនស្តុក (+/-) ភ្លាមៗ (Instant Stock Adjust)។</li>
-<li><strong>FR-07 (Order Verification &amp; Management):</strong> ត្រួតពិនិត្យវិក្កយបត្រ, ប្តូរស្ថានភាព (Pending, Paid, Completed, Cancelled)។</li>
-<li><strong>FR-08 (Telegram Order Dispatch):</strong> បាញ់សារជូនដំណឹងការកុម្ម៉ង់ថ្មី និងរូបភាពវិក្កយបត្រទៅកាន់ Telegram របស់ម្ចាស់ហាងភ្លាមៗ។</li>
-<li><strong>FR-09 (Bilingual &amp; Content Management):</strong> អាចកែសម្រួលខ្លឹមសារអត្ថបទគ្រប់ទំព័រទាំងភាសាខ្មែរ និងអង់គ្លេសពី Admin Dashboard។</li>
+<li><strong>FR-01 (Catalog Browsing):</strong> ប្រព័ន្ធត្រូវបង្ហាញផលិតផលទាំងអស់ជាមួយរូបភាពច្បាស់ តម្លៃ និងស្ថានភាពស្តុក។</li>
+<li><strong>FR-02 (Filtering &amp; Search):</strong> អតិថិជនអាចស្វែងរកឈ្មោះទំនិញ និងច្រោះតាមប្រភេទ (Men/Women/Accessories)។</li>
+<li><strong>FR-03 (Shopping Cart):</strong> អតិថិជនអាចបន្ថែម, បន្ថយចំនួន (+/-), និងលុបទំនិញពីកន្ត្រកភ្លាមៗ។</li>
+<li><strong>FR-04 (Coupon Application):</strong> គាំទ្រការបញ្ចូលលេខកូដបញ្ចុះតម្លៃ និងកាត់កងទឹកប្រាក់ភ្លាមៗ។</li>
+<li><strong>FR-05 (KHQR Payment):</strong> បង្កើតកូដ KHQR ស្វ័យប្រវត្តិតាមតម្លៃសរុប និងទទួលការ Upload វិក្កយបត្រ។</li>
+<li><strong>FR-06 (Telegram Notifications):</strong> បញ្ជូនសារដំណឹងរាល់ពេលមាន Order ថ្មីទៅកាន់ Telegram Channel/Bot របស់ម្ចាស់ហាង។</li>
+<li><strong>FR-07 (User Authentication):</strong> អតិថិជនអាចចុះឈ្មោះ, Sign In ដោយ Email/Password ឬ Google Account។</li>
+<li><strong>FR-08 (Admin Management):</strong> Admin អាចគ្រប់គ្រងផលិតផល (CRUD), កែប្រែស្តុក, និងប្តូរស្ថានភាព Order។</li>
+<li><strong>FR-09 (Security &amp; Rate Limiting):</strong> ចាក់សោការ Sign In របស់ Admin រយៈពេល ១៥ នាទីប្រសិនបើព្យាយាមខុសលើសពី ៥ ដង។</li>
 </ul>
 <h3 class="doc-h3">3.2 User Roles (តួនាទីអ្នកប្រើប្រាស់)</h3>
-<ol class="doc-ol">
-<li><strong>Guest / Customer:</strong> ចូលទស្សនាទំនិញ, បង្កើតគណនី, ទិញទំនិញ, តាមដាន Order និងផ្ញើសារទាក់ទងមកហាង។</li>
-<li><strong>Administrator / Superadmin:</strong> មានសិទ្ធិពេញលេញលើប្រព័ន្ធ (គ្រប់គ្រងទំនិញ, ស្តុក, ការបញ្ជាទិញ, បុគ្គលិក, ការកំណត់ហាង, និង Backup Database)។</li>
-<li><strong>Staff (បុគ្គលិកហាង):</strong> គ្រប់គ្រងការបញ្ជាទិញ, ពិនិត្យវិក្កយបត្រ, និងឆ្លើយតបសារអតិថិជន។</li>
-</ol>
-<h3 class="doc-h3">3.3 Main Features Matrix (តារាងមុខងារចម្បង)</h3>
-<div class="table-responsive"><table class="doc-table">
-<thead><tr>
-<th>មុខងារ</th>
-<th>Customer</th>
-<th>Staff</th>
-<th>Superadmin</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>មើលកាតាឡុក &amp; ស្វែងរកទំនិញ</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>ដាក់ក្នុង Cart &amp; កុម្ម៉ង់ទិញ</td>
-<td>✅</td>
-<td>❌</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>ស្កេនទូទាត់ KHQR &amp; Upload វិក្កយបត្រ</td>
-<td>✅</td>
-<td>❌</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>មើលប្រវត្តិ Order ក្នុង Profile</td>
-<td>✅</td>
-<td>❌</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>ផ្ទៀងផ្ទាត់ Order &amp; ប្តូរស្ថានភាព</td>
-<td>❌</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>កែប្រែចំនួនស្តុកទំនិញ</td>
-<td>❌</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>បន្ថែម/កែ/លុបផលិតផល</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>កែប្រែការកំណត់ហាង &amp; ខ្លឹមសារទំព័រ</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>បង្កើតគណនីបុគ្គលិក &amp; Backup Data</td>
-<td>❌</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-</tbody>
-</table></div>
+<ul class="doc-ul">
+<li><strong>Guest:</strong> អាចមើលទំនិញ, ស្វែងរក, និងបន្ថែមទំនិញចូលកន្ត្រក។</li>
+<li><strong>Customer:</strong> អាចធ្វើការ Checkout, បង់ប្រាក់ KHQR, មើលប្រវត្តិបញ្ជាទិញ, និងកែសម្រួលព័ត៌មានផ្ទាល់ខ្លួន។</li>
+<li><strong>Admin:</strong> មានសិទ្ធិពេញលេញលើផ្ទាំងគ្រប់គ្រង Dashboard, CRUD ផលិតផល, ពិនិត្យការទូទាត់, និងកែប្រែការកំណត់ហាង។</li>
+</ul>
+<h3 class="doc-h3">3.3 Main Features (មុខងារចម្បង)</h3>
+<ul class="doc-ul">
+<li>Storefront UI, Shopping Cart Drawer, KHQR Payment Engine, Admin Backoffice, Multilingual (KM/EN), Theme Engine (Light/Dark)។</li>
+</ul>
 <hr class="section-divider">
-<h2 class="doc-h2"><span class="h2-badge">§</span> 4. SYSTEM DESIGN (ការរចនាប្រព័ន្ធ)</h2>
+<h2 class="doc-h2"><span class="h2-badge">§</span> 4. SYSTEM DESIGN (ការរចនាស្ថាបត្យកម្មប្រព័ន្ធ)</h2>
 <h3 class="doc-h3">4.1 System Architecture (ស្ថាបត្យកម្មប្រព័ន្ធ)</h3>
 
                     <div class="diagram-wrapper">
                         <div class="diagram-title"><i class="fas fa-project-diagram"></i> Diagram / Flow Chart</div>
                         <div class="mermaid">graph TD
     Client[&quot;Browser (Desktop / Mobile Client)&quot;] --&gt; WebServer[&quot;Apache Web Server / PHP 8.x&quot;]
-    WebServer --&gt; FrontendViews[&quot;UI Layer (Storefront, Checkout, Profile, Admin)&quot;]
-    WebServer --&gt; API[&quot;RESTful API Layer (cart, order, auth, admin)&quot;]
-    API --&gt; SecurityLayer[&quot;Security Middleware (CSRF, Rate Limiter, Sessions)&quot;]
-    SecurityLayer --&gt; MySQL[(&quot;MySQL Database (ecommerce)&quot;)]
-    API --&gt; TelegramAPI[&quot;Telegram Bot API (Instant Order Notification)&quot;]</div>
+    WebServer --&gt; FrontendViews[&quot;UI Layer (Storefront / Admin / CSS Theme)&quot;]
+    FrontendViews --&gt; CoreAPIs[&quot;API Layer (Cart / Products / Auth / Telegram)&quot;]
+    CoreAPIs --&gt; Database[(&quot;MySQL Database (ecommerce)&quot;)]
+    CoreAPIs --&gt; ExternalServices[&quot;External: Telegram Bot API / Google OAuth / Mock KHQR&quot;]</div>
                     </div>
-<h3 class="doc-h3">4.2 User Flow (លំហូរដំណើរការរបស់អ្នកប្រើប្រាស់)</h3>
-
-                    <div class="diagram-wrapper">
-                        <div class="diagram-title"><i class="fas fa-project-diagram"></i> Diagram / Flow Chart</div>
-                        <div class="mermaid">flowchart TD
-    Start([ចូលកាន់ទំព័រដើម Website]) --&gt; Browse[ស្វែងរក និងជ្រើសរើសសម្លៀកបំពាក់]
-    Browse --&gt; QuickView[បើកមើល Quick-View ឬព័ត៌មានលម្អិត]
-    QuickView --&gt; AddCart[ចុចបន្ថែមក្នុង Cart]
-    AddCart --&gt; CartDrawer[ពិនិត្យចំនួនទំនិញក្នុង Cart Drawer]
-    CartDrawer --&gt; Checkout[បន្តទៅកាន់ទំព័រ Checkout]
-    Checkout --&gt; FillInfo[បំពេញឈ្មោះ លេខទូរស័ព្ទ និងអាសយដ្ឋាន]
-    FillInfo --&gt; ScanKHQR[ស្កេនទូទាត់ប្រាក់តាម KHQR Bakong]
-    ScanKHQR --&gt; UploadReceipt[Upload រូបភាពវិក្កយបត្របង់ប្រាក់]
-    UploadReceipt --&gt; SubmitOrder[ចុចបញ្ជាក់ការបញ្ជាទិញ Place Order]
-    SubmitOrder --&gt; TelegramAlert[ប្រព័ន្ធផ្ញើព័ត៌មានទៅ Telegram ម្ចាស់ហាង]
-    SubmitOrder --&gt; OrderSuccess([បង្ហាញទំព័រជោគជ័យ Order Confirmation])</div>
-                    </div>
-<h3 class="doc-h3">4.3 Website Sitemap (រចនាសម្ព័ន្ធទំព័រគេហទំព័រ)</h3>
-<pre class="code-block"><code>/ (Root)
-│── index.php (ច្រកចូលចម្បង)
-│── checkout.php (ច្រក Checkout ចម្បង)
-│── home/
-│   ├── index.php (ទំព័រដើម Storefront &amp; About Us)
-│   ├── checkout.php (ទំព័រ Checkout &amp; ស្កេន KHQR)
-│   ├── login.php (ទំព័រចូលគណនី &amp; ចុះឈ្មោះ)
-│   ├── profile.php (ទំព័រប្រវត្តិរូប &amp; ប្រវត្តិ Order)
-│   ├── logout.php (ចាកចេញពីគណនី)
-│   └── navbar.php (របារម៉ឺនុយរួម)
-│── customer-service/
-│   ├── index.php (ទម្រង់ទំនាក់ទំនងសេវាកម្មអតិថិជន ២៤/៧)
-│   └── dashboard.php (ផ្ទាំងមើលសារអតិថិជនសម្រាប់បុគ្គលិក)
-│── admin/
-│   ├── index.php (ផ្ទាំង Dashboard ទូទៅ &amp; Product Catalog)
-│   ├── operations.php (គ្រប់គ្រង Order, ស្តុក, អតិថិជន, របាយការណ៍)
-│   ├── store-management.php (កំណត់ហាង, Banner, Logo, ខ្លឹមសារ ២ ភាសា)
-│   ├── security.php (គ្រប់គ្រងបុគ្គលិក, ពាក្យសម្ងាត់, Active Sessions)
-│   ├── backup.php (ប្រព័ន្ធ Backup &amp; Restore ទិន្នន័យ)
-│   └── logout.php (ចាកចេញពី Admin)
-└── api/
-    ├── db.php (ការតភ្ជាប់ Database MySQL)
-    ├── products.php (API ទាញ និងកែប្រែទំនិញ)
-    ├── cart.php (API គ្រប់គ្រងរទេះទំនិញ)
-    ├── telegram-order.php (API បង្កើត Order &amp; បាញ់ទៅ Telegram)
-    ├── user-auth.php (API គ្រប់គ្រង Customer Auth)
-    ├── admin-auth.php (API គ្រប់គ្រង Admin Auth &amp; Security)
-    └── i18n.php (API គ្រប់គ្រងភាសាខ្មែរ-អង់គ្លេស)</code></pre>
-<hr class="section-divider">
-<h2 class="doc-h2"><span class="h2-badge">§</span> 5. DATABASE DESIGN (ការរចនាទិន្នន័យ &amp; ERD)</h2>
-<h3 class="doc-h3">5.1 Database Tables Specification (តារាងទិន្នន័យ និង Attributes)</h3>
-<h4 class="doc-h4">១. តារាង <code>products</code> (តារាងផលិតផល)</h4>
-<div class="table-responsive"><table class="doc-table">
-<thead><tr>
-<th>Field</th>
-<th>Type</th>
-<th>Constraints</th>
-<th>ការពិពណ៌នា</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>INT</td>
-<td><strong>PK</strong>, AUTO_INCREMENT</td>
-<td>លេខសម្គាល់ផលិតផល</td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td>VARCHAR(255)</td>
-<td>NOT NULL</td>
-<td>ឈ្មោះផលិតផល</td>
-</tr>
-<tr>
-<td><code>category</code></td>
-<td>VARCHAR(50)</td>
-<td>NOT NULL</td>
-<td>ប្រភេទ (men, women, accessories)</td>
-</tr>
-<tr>
-<td><code>description</code></td>
-<td>TEXT</td>
-<td>NULL</td>
-<td>ការពិពណ៌នាលម្អិត</td>
-</tr>
-<tr>
-<td><code>price</code></td>
-<td>DECIMAL(10,2)</td>
-<td>NOT NULL</td>
-<td>តម្លៃលក់ជាក់ស្តែង ($)</td>
-</tr>
-<tr>
-<td><code>cost_price</code></td>
-<td>DECIMAL(10,2)</td>
-<td>NOT NULL</td>
-<td>តម្លៃដើមទំនិញ ($)</td>
-</tr>
-<tr>
-<td><code>discount_price</code></td>
-<td>DECIMAL(10,2)</td>
-<td>NULL</td>
-<td>តម្លៃមុនបញ្ចុះតម្លៃ ($)</td>
-</tr>
-<tr>
-<td><code>discount_percentage</code></td>
-<td>INT</td>
-<td>DEFAULT 0</td>
-<td>ភាគរយបញ្ចុះតម្លៃ (ឧ. 20, 25)</td>
-</tr>
-<tr>
-<td><code>is_discount_active</code></td>
-<td>TINYINT(1)</td>
-<td>DEFAULT 0</td>
-<td>ស្ថានភាពបញ្ចុះតម្លៃ (1=បើក, 0=បិទ)</td>
-</tr>
-<tr>
-<td><code>image</code></td>
-<td>VARCHAR(255)</td>
-<td>NOT NULL</td>
-<td>ផ្លូវរូបភាពផលិតផល</td>
-</tr>
-<tr>
-<td><code>stock</code></td>
-<td>INT</td>
-<td>NOT NULL DEFAULT 0</td>
-<td>ចំនួនស្តុកជាក់ស្តែង</td>
-</tr>
-<tr>
-<td><code>low_stock_threshold</code></td>
-<td>INT</td>
-<td>DEFAULT 5</td>
-<td>កម្រិតជូនដំណឹងស្តុកទាប</td>
-</tr>
-<tr>
-<td><code>created_at</code></td>
-<td>TIMESTAMP</td>
-<td>DEFAULT CURRENT_TIMESTAMP</td>
-<td>ថ្ងៃខែបង្កើត</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class="doc-h4">២. តារាង <code>sales_orders</code> (តារាងការបញ្ជាទិញ)</h4>
-<div class="table-responsive"><table class="doc-table">
-<thead><tr>
-<th>Field</th>
-<th>Type</th>
-<th>Constraints</th>
-<th>ការពិពណ៌នា</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>INT</td>
-<td><strong>PK</strong>, AUTO_INCREMENT</td>
-<td>លេខសម្គាល់ Order</td>
-</tr>
-<tr>
-<td><code>order_reference</code></td>
-<td>VARCHAR(40)</td>
-<td>NOT NULL, UNIQUE</td>
-<td>លេខកូដវិក្កយបត្រ (ឧ. ORD-202611-XXXX)</td>
-</tr>
-<tr>
-<td><code>user_id</code></td>
-<td>INT</td>
-<td><strong>FK</strong> (users.id) NULL</td>
-<td>លេខសម្គាល់អតិថិជន (បើមានគណនី)</td>
-</tr>
-<tr>
-<td><code>customer_name</code></td>
-<td>VARCHAR(120)</td>
-<td>NOT NULL</td>
-<td>ឈ្មោះអ្នកទិញ</td>
-</tr>
-<tr>
-<td><code>phone_number</code></td>
-<td>VARCHAR(32)</td>
-<td>NOT NULL</td>
-<td>លេខទូរស័ព្ទ / Telegram</td>
-</tr>
-<tr>
-<td><code>address</code></td>
-<td>TEXT</td>
-<td>NOT NULL</td>
-<td>អាសយដ្ឋានដឹកជញ្ជូន</td>
-</tr>
-<tr>
-<td><code>product_id</code></td>
-<td>INT</td>
-<td><strong>FK</strong> (products.id)</td>
-<td>លេខសម្គាល់ផលិតផលដែលបានទិញ</td>
-</tr>
-<tr>
-<td><code>product_name</code></td>
-<td>VARCHAR(255)</td>
-<td>NOT NULL</td>
-<td>ឈ្មោះផលិតផល</td>
-</tr>
-<tr>
-<td><code>quantity</code></td>
-<td>INT</td>
-<td>NOT NULL DEFAULT 1</td>
-<td>ចំនួនដែលបានទិញ</td>
-</tr>
-<tr>
-<td><code>unit_price</code></td>
-<td>DECIMAL(10,2)</td>
-<td>NOT NULL</td>
-<td>តម្លៃក្នុង ១ ឯកតា</td>
-</tr>
-<tr>
-<td><code>discount_amount</code></td>
-<td>DECIMAL(10,2)</td>
-<td>DEFAULT 0.00</td>
-<td>ចំនួនទឹកប្រាក់ដែលបានបញ្ចុះ</td>
-</tr>
-<tr>
-<td><code>coupon_code</code></td>
-<td>VARCHAR(40)</td>
-<td>NULL</td>
-<td>លេខកូដគូប៉ុងដែលបានប្រើ</td>
-</tr>
-<tr>
-<td><code>payment_method</code></td>
-<td>VARCHAR(30)</td>
-<td>DEFAULT &#x27;khqr&#x27;</td>
-<td>វិធីសាស្ត្រទូទាត់ (KHQR, Cash)</td>
-</tr>
-<tr>
-<td><code>payment_status</code></td>
-<td>VARCHAR(20)</td>
-<td>DEFAULT &#x27;pending&#x27;</td>
-<td>ស្ថានភាពទូទាត់ (pending, verified)</td>
-</tr>
-<tr>
-<td><code>status</code></td>
-<td>VARCHAR(20)</td>
-<td>DEFAULT &#x27;Pending&#x27;</td>
-<td>ស្ថានភាព Order (Pending, Paid, Completed)</td>
-</tr>
-<tr>
-<td><code>receipt_image</code></td>
-<td>VARCHAR(255)</td>
-<td>NULL</td>
-<td>ឈ្មោះឯកសារវិក្កយបត្រដែលបាន Upload</td>
-</tr>
-<tr>
-<td><code>created_at</code></td>
-<td>TIMESTAMP</td>
-<td>DEFAULT CURRENT_TIMESTAMP</td>
-<td>ថ្ងៃខែកុម្ម៉ង់</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class="doc-h4">៣. តារាង <code>users</code> (តារាងគណនីអតិថិជន)</h4>
-<div class="table-responsive"><table class="doc-table">
-<thead><tr>
-<th>Field</th>
-<th>Type</th>
-<th>Constraints</th>
-<th>ការពិពណ៌នា</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>INT</td>
-<td><strong>PK</strong>, AUTO_INCREMENT</td>
-<td>លេខសម្គាល់អតិថិជន</td>
-</tr>
-<tr>
-<td><code>username</code></td>
-<td>VARCHAR(100)</td>
-<td>NOT NULL, UNIQUE</td>
-<td>ឈ្មោះគណនី / Email</td>
-</tr>
-<tr>
-<td><code>email</code></td>
-<td>VARCHAR(100)</td>
-<td>NULL</td>
-<td>អ៊ីម៉ែល</td>
-</tr>
-<tr>
-<td><code>password</code></td>
-<td>VARCHAR(255)</td>
-<td>NULL</td>
-<td>ពាក្យសម្ងាត់ (Bcrypt Hash)</td>
-</tr>
-<tr>
-<td><code>google_id</code></td>
-<td>VARCHAR(255)</td>
-<td>NULL</td>
-<td>លេខសម្គាល់ Google UID (Google GIS)</td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td>VARCHAR(100)</td>
-<td>NOT NULL</td>
-<td>ឈ្មោះពេញរបស់អតិថិជន</td>
-</tr>
-<tr>
-<td><code>phone</code></td>
-<td>VARCHAR(32)</td>
-<td>NULL</td>
-<td>លេខទូរស័ព្ទ</td>
-</tr>
-<tr>
-<td><code>address</code></td>
-<td>TEXT</td>
-<td>NULL</td>
-<td>អាសយដ្ឋានលំនាំដើម</td>
-</tr>
-<tr>
-<td><code>city</code></td>
-<td>VARCHAR(100)</td>
-<td>NULL</td>
-<td>រាជធានី/ខេត្ត</td>
-</tr>
-<tr>
-<td><code>auth_provider</code></td>
-<td>VARCHAR(20)</td>
-<td>DEFAULT &#x27;email&#x27;</td>
-<td>ប្រភពចុះឈ្មោះ (email, google)</td>
-</tr>
-<tr>
-<td><code>created_at</code></td>
-<td>TIMESTAMP</td>
-<td>DEFAULT CURRENT_TIMESTAMP</td>
-<td>ថ្ងៃបង្កើតគណនី</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class="doc-h4">៤. តារាង <code>admins</code> (តារាងអ្នកគ្រប់គ្រងប្រព័ន្ធ)</h4>
-<div class="table-responsive"><table class="doc-table">
-<thead><tr>
-<th>Field</th>
-<th>Type</th>
-<th>Constraints</th>
-<th>ការពិពណ៌នា</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>INT</td>
-<td><strong>PK</strong>, AUTO_INCREMENT</td>
-<td>លេខសម្គាល់ Admin</td>
-</tr>
-<tr>
-<td><code>username</code></td>
-<td>VARCHAR(100)</td>
-<td>NOT NULL, UNIQUE</td>
-<td>ឈ្មោះចូលប្រើប្រាស់</td>
-</tr>
-<tr>
-<td><code>email</code></td>
-<td>VARCHAR(100)</td>
-<td>NULL</td>
-<td>អ៊ីម៉ែល Admin</td>
-</tr>
-<tr>
-<td><code>password</code></td>
-<td>VARCHAR(255)</td>
-<td>NOT NULL</td>
-<td>ពាក្យសម្ងាត់ (Bcrypt Hash)</td>
-</tr>
-<tr>
-<td><code>role</code></td>
-<td>VARCHAR(20)</td>
-<td>DEFAULT &#x27;admin&#x27;</td>
-<td>តួនាទី (admin, staff)</td>
-</tr>
-<tr>
-<td><code>permissions</code></td>
-<td>TEXT</td>
-<td>NULL</td>
-<td>សិទ្ធិកំណត់ជា JSON (បើជា Staff)</td>
-</tr>
-<tr>
-<td><code>is_active</code></td>
-<td>TINYINT(1)</td>
-<td>DEFAULT 1</td>
-<td>ស្ថានភាពគណនី (1=Active)</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class="doc-h4">៥. តារាង <code>discount_coupons</code> (តារាងគូប៉ុងបញ្ចុះតម្លៃ)</h4>
-<div class="table-responsive"><table class="doc-table">
-<thead><tr>
-<th>Field</th>
-<th>Type</th>
-<th>Constraints</th>
-<th>ការពិពណ៌នា</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><code>id</code></td>
-<td>BIGINT UNSIGNED</td>
-<td><strong>PK</strong>, AUTO_INCREMENT</td>
-<td>លេខសម្គាល់គូប៉ុង</td>
-</tr>
-<tr>
-<td><code>coupon_code</code></td>
-<td>VARCHAR(40)</td>
-<td>UNIQUE, NOT NULL</td>
-<td>លេខកូដគូប៉ុង (ឧ. PROMO20)</td>
-</tr>
-<tr>
-<td><code>discount_type</code></td>
-<td>VARCHAR(12)</td>
-<td>NOT NULL</td>
-<td>ប្រភេទ (<code>percent</code> ឬ <code>fixed</code>)</td>
-</tr>
-<tr>
-<td><code>discount_value</code></td>
-<td>DECIMAL(10,2)</td>
-<td>NOT NULL</td>
-<td>តម្លៃបញ្ចុះ (ឧ. 20% ឬ $5)</td>
-</tr>
-<tr>
-<td><code>minimum_subtotal</code></td>
-<td>DECIMAL(10,2)</td>
-<td>DEFAULT 0.00</td>
-<td>តម្លៃទិញអប្បបរមាដើម្បីប្រើបាន</td>
-</tr>
-<tr>
-<td><code>is_active</code></td>
-<td>TINYINT(1)</td>
-<td>DEFAULT 1</td>
-<td>ស្ថានភាពគូប៉ុង</td>
-</tr>
-</tbody>
-</table></div>
-<h4 class="doc-h4">៦. តារាង <code>system_settings</code> &amp; <code>store_translations</code></h4>
+<h3 class="doc-h3">4.2 User Flow (លំហូរអ្នកប្រើប្រាស់)</h3>
 <ul class="doc-ul">
-<li><code>system_settings</code>: រក្សាទុក Store Name (<code>SN STORE</code>), Logo URL, Telegram Bot Token, Chat ID, និង Contact Info។</li>
-<li><code>store_translations</code>: រក្សាទុកខ្លឹមសារ និង Note គ្រប់ទំព័រទាំងភាសាខ្មែរ (<code>khmer_text</code>) និងអង់គ្លេស (<code>english_text</code>)។</li>
+<li>បានបង្ហាញយ៉ាងលម្អិតក្នុងដ្យាក្រាម User Flow ត្រង់ផ្នែកទី ១ ចំណុច ២។</li>
 </ul>
-<h3 class="doc-h3">5.2 Table Relationships &amp; Cardinality (ទំនាក់ទំនងរវាងតារាង)</h3>
-<ol class="doc-ol">
-<li><strong><code>users</code> ទៅកាន់ <code>sales_orders</code> (1 : N)</strong>: អតិថិជនម្នាក់អាចធ្វើការបញ្ជាទិញបានច្រើនដង (<code>1 User has Many Orders</code>)។</li>
-<li><strong><code>products</code> ទៅកាន់ <code>sales_orders</code> (1 : N)</strong>: ផលិតផលមួយមុខអាចត្រូវបានកុម្ម៉ង់ទិញក្នុង Order ច្រើនផ្សេងៗគ្នា (<code>1 Product in Many Orders</code>)។</li>
-<li><strong><code>admins</code> ទៅកាន់ <code>admin_sessions</code> (1 : N)</strong>: Admin ម្នាក់អាចមាន Session ចូលប្រើប្រាស់ច្រើនលើឧបករណ៍ផ្សេងគ្នា (<code>1 Admin has Many Sessions</code>)។</li>
-<li><strong><code>discount_coupons</code> ទៅកាន់ <code>sales_orders</code> (1 : N)</strong>: គូប៉ុងមួយអាចត្រូវបានអនុវត្តលើ Order ជាច្រើន (<code>1 Coupon used in Many Orders</code>)។</li>
-</ol>
-<h3 class="doc-h3">5.3 Entity Relationship Diagram (ERD)</h3>
-
-                    <div class="diagram-wrapper">
-                        <div class="diagram-title"><i class="fas fa-project-diagram"></i> Diagram / Flow Chart</div>
-                        <div class="mermaid">erDiagram
-    USERS ||--o{ SALES_ORDERS : places
-    PRODUCTS ||--o{ SALES_ORDERS : ordered_in
-    DISCOUNT_COUPONS ||--o{ SALES_ORDERS : applied_to
-    ADMINS ||--o{ ADMIN_SESSIONS : has
-    ADMINS ||--o{ ADMIN_AUDIT_LOG : logs
-    PRODUCTS ||--o{ INVENTORY_ADJUSTMENTS : tracks
-
-    USERS {
-        int id PK
-        string username UK
-        string email
-        string password
-        string google_id
-        string name
-        string phone
-        string address
-        string city
-        string auth_provider
-        timestamp created_at
-    }
-
-    PRODUCTS {
-        int id PK
-        string name
-        string category
-        text description
-        decimal price
-        decimal cost_price
-        decimal discount_price
-        int discount_percentage
-        tinyint is_discount_active
-        string image
-        int stock
-        int low_stock_threshold
-        timestamp created_at
-    }
-
-    SALES_ORDERS {
-        int id PK
-        string order_reference UK
-        int user_id FK
-        string customer_name
-        string phone_number
-        text address
-        int product_id FK
-        string product_name
-        int quantity
-        decimal unit_price
-        decimal discount_amount
-        string coupon_code
-        string payment_method
-        string payment_status
-        string status
-        string receipt_image
-        timestamp created_at
-    }
-
-    DISCOUNT_COUPONS {
-        bigint id PK
-        string coupon_code UK
-        string discount_type
-        decimal discount_value
-        decimal minimum_subtotal
-        tinyint is_active
-        datetime expires_at
-    }
-
-    ADMINS {
-        int id PK
-        string username UK
-        string email
-        string password
-        string role
-        text permissions
-        tinyint is_active
-    }
-
-    ADMIN_SESSIONS {
-        bigint id PK
-        int admin_id FK
-        char session_hash UK
-        string ip_address
-        string user_agent
-        datetime expires_at
-    }
-
-    ADMIN_AUDIT_LOG {
-        bigint id PK
-        int actor_id
-        string actor_username
-        string action
-        timestamp created_at
-    }
-
-    INVENTORY_ADJUSTMENTS {
-        int id PK
-        int product_id FK
-        string product_name
-        int change_amount
-        int stock_before
-        int stock_after
-        string reason
-        timestamp created_at
-    }</div>
-                    </div>
-<hr class="section-divider">
-<h2 class="doc-h2"><span class="h2-badge">§</span> 6. SYSTEM DEVELOPMENT (ការអភិវឌ្ឍប្រព័ន្ធ)</h2>
-<h3 class="doc-h3">6.1 Technologies Used (បច្ចេកវិទ្យាប្រើប្រាស់)</h3>
+<h3 class="doc-h3">4.3 Website Sitemap (ប្លង់គេហទំព័រ)</h3>
 <ul class="doc-ul">
-<li><strong>Frontend:</strong> HTML5 Semantic Markup, CSS3 Custom Properties (Design Tokens), Vanilla JavaScript (ES6+), FontAwesome Icons, Google Fonts (Kantumruy Pro &amp; Plus Jakarta Sans)។</li>
-<li><strong>Backend:</strong> PHP 8.x (Native Procedural &amp; Object-Oriented APIs, Strict Types, Output Buffering, Secure Session Management)។</li>
-<li><strong>Database:</strong> MySQL 8.x / MariaDB (InnoDB Engine, UTF8MB4 Unicode, Prepared Statements, ACID Transactions)។</li>
-<li><strong>Security Tools:</strong> Bcrypt Password Hashing, CSRF Tokens, Anti-Brute-Force Rate Limiting (15-min lockout), Strict Input Sanitization, HTTPS Cookie Flags។</li>
-<li><strong>Third-Party APIs:</strong> Telegram Bot API (Instant Order &amp; Receipt Dispatch), Google Identity Services (GIS 1-Click OAuth)។</li>
+<li><strong>Storefront:</strong> <code>/</code>, <code>home/index.php</code>, <code>home/checkout.php</code>, <code>home/login.php</code>, <code>home/profile.php</code>, <code>customer-service/index.php</code></li>
+<li><strong>Admin:</strong> <code>admin/index.php</code> (Dashboard &amp; Products), <code>admin/operations.php</code>, <code>admin/security.php</code>, <code>admin/store-management.php</code>, <code>admin/backup.php</code></li>
+</ul>
+<h3 class="doc-h3">4.4 UI Design / Main Screens (ការរចនាទម្រង់អេក្រង់សំខាន់ៗ)</h3>
+<ul class="doc-ul">
+<li>រចនាឡើងតាមបែប <strong>Luxury Minimalist Fashion</strong> ដោយប្រើពណ៌បៃតងចាស់ Emerald (<code>#203f3a</code>), ពណ៌មាស Champagne (<code>#b8860b</code>), និងផ្ទៃខាងក្រោយពណ៌សក្តៅ (<code>#f9f8f6</code>) ជាមួយពុម្ពអក្សរខ្មែរផ្លូវការ <code>Kantumruy Pro</code>។</li>
+</ul>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 5. DATABASE DESIGN (ការរចនាមូលដ្ឋានទិន្នន័យ)</h2>
+<h3 class="doc-h3">5.1 Database Tables (បញ្ជីតារាងទាំង ១៤)</h3>
+<ol class="doc-ol">
+<li><code>users</code>: រក្សាទុកគណនីអតិថិជន (id, username, email, password, name, phone, google_id)</li>
+<li><code>account_sessions</code>: រក្សាទុក Remember Login Tokens របស់អតិថិជន</li>
+<li><code>admins</code>: គណនី Admin និង Superadmin (id, username, email, password, role, is_active)</li>
+<li><code>admin_sessions</code>: សម័យកាល Session របស់អ្នកគ្រប់គ្រង</li>
+<li><code>admin_login_attempts</code>: កត់ត្រាការ Sign-in បរាជ័យដើម្បីការពារ Brute-force Rate Limiting</li>
+<li><code>admin_audit_log</code>: កំណត់ត្រាសកម្មភាព Audit Trail របស់ Admin</li>
+<li><code>categories</code>: ប្រភេទផលិតផល (id, name, slug)</li>
+<li><code>products</code>: ព័ត៌មានលម្អិតនៃផលិតផល (id, category_id, name, description, price, original_price, stock, image_url)</li>
+<li><code>orders</code>: បញ្ជីការបញ្ជាទិញ (id, user_id, total_amount, order_status, payment_method, receipt_image, created_at)</li>
+<li><code>order_items</code>: មុខទំនិញក្នុង Order នីមួយៗ (id, order_id, product_id, quantity, price)</li>
+<li><code>cart_items</code>: កន្ត្រកទំនិញបណ្ដោះអាសន្ន (id, user_id, product_id, quantity)</li>
+<li><code>coupons</code>: លេខកូដបញ្ចុះតម្លៃ (id, code, discount_percent, discount_amount, expiry_date)</li>
+<li><code>customer_messages</code>: សារទំនាក់ទំនងពីទំព័រ Customer Service (id, user_id, name, email, message, created_at)</li>
+<li><code>system_settings</code>: ការកំណត់ហាងទូទៅ (store_name, store_logo_url, telegram_bot_token, telegram_chat_id)</li>
+</ol>
+<h3 class="doc-h3">5.2 Primary Key / Foreign Key (សោចម្បង និងសោក្រៅ)</h3>
+<ul class="doc-ul">
+<li>គ្រប់តារាងទាំងអស់មាន <code>id</code> ជា Primary Key (PK)។</li>
+<li>សោក្រៅ (FK) ត្រូវបានភ្ជាប់គ្នាយ៉ាងត្រឹមត្រូវដើម្បីការពារទិន្នន័យកុំឱ្យបាត់បង់ (Cascading Deletes &amp; Constraints)។</li>
+</ul>
+<h3 class="doc-h3">5.3 Relationships (ទំនាក់ទំនងរវាងតារាង)</h3>
+<ul class="doc-ul">
+<li><code>users</code> 1 &amp;harr; N <code>orders</code> (1:N)</li>
+<li><code>orders</code> 1 &amp;harr; N <code>order_items</code> (1:N)</li>
+<li><code>products</code> 1 &amp;harr; N <code>order_items</code> (1:N)</li>
+<li><code>categories</code> 1 &amp;harr; N <code>products</code> (1:N)</li>
+<li><code>users</code> 1 &amp;harr; N <code>cart_items</code> (1:N)</li>
+</ul>
+<h3 class="doc-h3">5.4 ERD (Entity Relationship Diagram)</h3>
+<ul class="doc-ul">
+<li>បានបង្ហាញដ្យាក្រាម Mermaid ERD ពេញលេញត្រង់ផ្នែកទី ១ ចំណុច ៤។</li>
+</ul>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 6. SYSTEM DEVELOPMENT (ការអភិវឌ្ឍប្រព័ន្ធជាក់ស្តែង)</h2>
+<ul class="doc-ul">
+<li><strong>Technologies Used (បច្ចេកវិទ្យាដែលបានប្រើប្រាស់):</strong></li>
+<li><strong>Frontend:</strong> Semantic HTML5, CSS3 Custom Properties (CSS Tokens), Vanilla JavaScript (ES6+), FontAwesome Icons, Kantumruy Pro Google Font។</li>
+<li><strong>Backend:</strong> PHP 8.2 (Procedural &amp; Clean Modular Architecture, Output Buffering, Native Sessions, Bcrypt Hashing)។</li>
+<li><strong>Database:</strong> MySQL 8.0 / MariaDB 10.4, MySQLi Prepared Statements។</li>
+<li><strong>APIs &amp; Integrations:</strong> Telegram Bot API (cURL), Google Identity Services (GIS), Bakong KHQR Simulation Engine។</li>
 <li><strong>Version Control:</strong> Git &amp; GitHub (<code>remsonich/E-Commerce_Webiste_Store</code>)។</li>
 </ul>
-<h3 class="doc-h3">6.2 Frontend Implementation Highlights</h3>
+<hr class="section-divider">
+<h2 class="doc-h2"><span class="h2-badge">§</span> 7. MAIN FEATURES (លក្ខណៈពិសេសចម្បង និងរូបភាពបង្ហាញ)</h2>
 <ul class="doc-ul">
-<li><strong>CSS Custom Properties (Zero-Flash Theming):</strong> ប្រើប្រាស់ Variables <code>:root</code> សម្រាប់ Color Tokens ធានាការប្តូរ Dark/Light Mode បានភ្លាមៗដោយគ្មានការព្រិចភ្នែក។</li>
-<li><strong>Bilingual Translation Engine:</strong> គ្រប់គ្រងតាមរយៈ <code>i18n.php</code> ជាមួយ Cookie / Session Storage ប្តូរភាសាខ្មែរ-អង់គ្លេស ដោយរក្សាទម្រង់ Layout មិនឱ្យបែកបាក់។</li>
-<li><strong>Interactive Cart Drawer:</strong> បង្កើតឡើងដោយ JavaScript ES6 សុទ្ធ រំកិល Slide-over ចេញពីស្តាំ គណនាតម្លៃ និងចំនួនទំនិញជាក់ស្តែង (+/-) ភ្លាមៗ។</li>
-</ul>
-<h3 class="doc-h3">6.3 Backend API Implementation Highlights</h3>
-<ul class="doc-ul">
-<li><strong>Prepared Statements:</strong> រាល់ Query ទាំងអស់ត្រូវបានការពារដោយ Parameterized Prepared Statements ការពារ SQL Injection ១០០%។</li>
-<li><strong>Rate Limiting Engine:</strong> តាមដាន IP និង Identity Hash ប្រសិនបើព្យាយាមចូលគណនីខុសលើសពី ៥ ដង ប្រព័ន្ធនឹងចាក់សោរយៈពេល ១៥ នាទី។</li>
-<li><strong>Atomic Inventory Adjustments:</strong> រាល់ពេល Checkout ជោគជ័យ ស្តុកទំនិញត្រូវបានដកចេញស្វ័យប្រវត្តិ និងកត់ត្រាចូលក្នុងតារាង <code>inventory_adjustments</code>។</li>
+<li><strong>1. Product Management (ការគ្រប់គ្រងផលិតផល):</strong></li>
+<li>បន្ថែម កែប្រែ លុប និងកែសម្រួលចំនួនស្តុក (+/- Stock) ភ្លាមៗក្នុងផ្ទាំង Admin Catalog។</li>
+<li><strong>2. Shopping Cart (កន្ត្រកទំនិញ):</strong></li>
+<li>កន្ត្រកទំនិញ Slide Drawer ដែលបង្ហាញរូបភាព, ចំនួនទំនិញ, Subtotal, និងប៊ូតុងកែប្រែចំនួនភ្លាមៗ។</li>
+<li><strong>3. Order Management (ការគ្រប់គ្រងការបញ្ជាទិញ):</strong></li>
+<li>ផ្ទាំងតាមដាន Order លម្អិត, ពិនិត្យវិក្កយបត្ររូបថតដែលអតិថិជនបាន Upload, និងការបញ្ជាក់ស្ថានភាព Order។</li>
+<li><strong>4. Customer Management (ការគ្រប់គ្រងអតិថិជន):</strong></li>
+<li>មើលបញ្ជីគណនីអតិថិជន, ប្រវត្តិទិញទំនិញ, និងការផ្ញើសារសាកសួររបស់អតិថិជន។</li>
+<li><strong>5. Payment Flow (លំហូរការទូទាត់ប្រាក់):</strong></li>
+<li>បង្កើតកូដ KHQR ស្វ័យប្រវត្តិតាមស្តង់ដារបាគង, ផ្ទាំង Mock Simulation, និងការ Upload វិក្កយបត្រ។</li>
+<li><strong>6. Admin Panel (ផ្ទាំងគ្រប់គ្រងទូទៅ):</strong></li>
+<li>Executive Dashboard បង្ហាញ KPIs ចំណូល, ចំនួន Orders, តម្លៃទំនិញក្នុងស្តុក, និងចំនួនអតិថិជន។</li>
 </ul>
 <hr class="section-divider">
-<h2 class="doc-h2"><span class="h2-badge">§</span> 7. MAIN FEATURES &amp; SCREENSHOT GUIDE (មុខងារចម្បង)</h2>
-<h3 class="doc-h3">7.1 Product &amp; Catalog Management (ការគ្រប់គ្រងផលិតផល)</h3>
-<ul class="doc-ul">
-<li><strong>Storefront Matrix:</strong> បង្ហាញកាតផលិតផលជា Grid ជាមួយរូបភាពច្បាស់, ផ្លាកស្តុកជាក់ស្តែង (In Stock), ផ្លាកបញ្ចុះតម្លៃ (<code>-25%</code>), និងប៊ូតុង Quick View/Add to Cart។</li>
-<li><strong>Admin Catalog:</strong> តារាងគ្រប់គ្រងផលិតផលដែលមាន Search, Filter តាមប្រភេទ, ប៊ូតុងកែប្រែចំនួនស្តុកភ្លាមៗ (+/-), Form បន្ថែមផលិតផលថ្មី និងកែសម្រួលតម្លៃ។</li>
-</ul>
-<h3 class="doc-h3">7.2 Shopping Cart &amp; Real-time Calculations (រទេះទំនិញ)</h3>
-<ul class="doc-ul">
-<li><strong>Slide-over Drawer:</strong> បើកមើលកន្ត្រកទំនិញដោយមិនចាកចេញពីទំព័រដើម។</li>
-<li><strong>Real-time Quantity Controls:</strong> ប៊ូតុងបូកដក (+/-) ចំនួនទំនិញ និងលុបទំនិញចោលភ្លាមៗ ដោយ Subtotal និង Total គណនាឡើងវិញស្វ័យប្រវត្តិតាម Real-time។</li>
-<li><strong>Free Shipping Badge:</strong> របារបង្ហាញលក្ខខណ្ឌដឹកជញ្ជូនឥតគិតថ្លៃ។</li>
-</ul>
-<h3 class="doc-h3">7.3 Checkout Flow &amp; Bakong KHQR Payment (ការទូទាត់ប្រាក់)</h3>
-<ul class="doc-ul">
-<li><strong>Order Summary:</strong> សង្ខេបផលិតផលដែលបានទិញ, បញ្ចូលលេខកូដគូប៉ុង (Coupon Code), និងបង្ហាញទឹកប្រាក់សរុប។</li>
-<li><strong>Customer Information:</strong> បំពេញឈ្មោះពេញ, លេខទូរស័ព្ទ, និងអាសយដ្ឋានដឹកជញ្ជូន។</li>
-<li><strong>Bakong KHQR Mockup:</strong> បង្ហាញរូបសញ្ញា QR Code ស្តង់ដារ KHQR Bakong សម្រាប់ឱ្យអតិថិជនស្កេនទូទាត់ប្រាក់។</li>
-<li><strong>Payment Receipt Upload:</strong> ឱ្យអតិថិជន Upload រូបថតវិក្កយបត្រ (Screenshot) បញ្ជាក់ការទូទាត់។</li>
-</ul>
-<h3 class="doc-h3">7.4 Order Management &amp; Telegram Notification (ការគ្រប់គ្រងការបញ្ជាទិញ)</h3>
-<ul class="doc-ul">
-<li><strong>Telegram Bot Alert:</strong> នៅពេលអតិថិជនចុច Place Order ប្រព័ន្ធនឹងបាញ់សាររួមជាមួយរូបភាពវិក្កយបត្រទៅកាន់ Telegram របស់ម្ចាស់ហាងភ្លាមៗ។</li>
-<li><strong>Admin Verification:</strong> Admin អាចចូលមើលវិក្កយបត្រជាក់ស្តែង ផ្ទៀងផ្ទាត់ទឹកប្រាក់ រួចចុច Approve ឬប្តូរស្ថានភាពទៅជា &quot;Paid&quot; / &quot;Completed&quot;។</li>
-</ul>
-<h3 class="doc-h3">7.5 Customer Authentication &amp; Profile Management</h3>
-<ul class="doc-ul">
-<li><strong>Dual Sign-In:</strong> គាំទ្រទាំងការចុះឈ្មោះដោយ Email/Password និង Google 1-Click Sign-In។</li>
-<li><strong>Customer Dashboard:</strong> អតិថិជនអាចមើលប្រវត្តិ Order របស់ខ្លួន អាសយដ្ឋានដឹកជញ្ជូន និងផ្លាស់ប្តូរពាក្យសម្ងាត់។</li>
-</ul>
-<hr class="section-divider">
-<h2 class="doc-h2"><span class="h2-badge">§</span> 8. TESTING &amp; QUALITY ASSURANCE (ការធ្វើតេស្តប្រព័ន្ធ)</h2>
-<h3 class="doc-h3">8.1 Testing Methodology (វិធីសាស្ត្រធ្វើតេស្ត)</h3>
-<p class="doc-p">យើងបានអនុវត្តការធ្វើតេស្តទាំងផ្នែក <strong>Manual Functional Testing</strong> និង <strong>Automated Script Verification (PHP CLI)</strong> ដើម្បីធានាថាគ្មានបញ្ហា Error ឬ Security Vulnerabilities ឡើយ។</p>
-<h3 class="doc-h3">8.2 Test Cases &amp; Results (លទ្ធផលតេស្តមុខងារចម្បង)</h3>
+<h2 class="doc-h2"><span class="h2-badge">§</span> 8. TESTING (ការធ្វើតេស្តប្រព័ន្ធ និងលទ្ធផល)</h2>
 <div class="table-responsive"><table class="doc-table">
 <thead><tr>
 <th>ល.រ</th>
@@ -1244,32 +1032,30 @@
 </tbody>
 </table></div>
 <hr class="section-divider">
-<h2 class="doc-h2"><span class="h2-badge">§</span> 9. PROJECT RESULT (លទ្ធផលសម្រេចបាននៃគម្រោង)</h2>
-<h3 class="doc-h3">9.1 Final Deliverables (សមិទ្ធផលចុងក្រោយ)</h3>
-<ol class="doc-ol">
-<li><strong>Live Web Application (Local Environment):</strong> ដំណើរការលើ Apache + PHP 8 + MySQL លើ Port 8000 (<code>http://localhost:8000/</code>)។</li>
-<li><strong>Interactive Front-End Storefront:</strong> ទំព័រមុខហាងស្រស់ស្អាត ទំនើប ឆ្លើយតបគ្រប់ឧបករណ៍ គាំទ្រ Dark/Light Mode និង ២ ភាសា។</li>
-<li><strong>Executive Backoffice Admin Panel:</strong> ផ្ទាំងគ្រប់គ្រងទូទៅដែលមាន Dashboard KPI, Catalog, Orders, KHQR Verification, Customers, Reports, Settings, និង Backup។</li>
-<li><strong>Relational Database (<code>ecommerce</code>):</strong> មាន ១៤ តារាង មានទិន្នន័យគ្រប់គ្រាន់ និងមាន Foreign Keys ត្រឹមត្រូវ។</li>
-<li><strong>Final GitHub Repository:</strong> គ្រប់ Source Code ទាំងអស់ត្រូវបាន Commit និង Push ទៅកាន់ GitHub:</li>
-</ol>
-<p class="doc-p">👉 <strong><code>https://github.com/remsonich/E-Commerce_Webiste_Store.git</code></strong></p>
+<h2 class="doc-h2"><span class="h2-badge">§</span> 9. PROJECT RESULT (លទ្ធផលនៃគម្រោង)</h2>
+<ul class="doc-ul">
+<li><strong>1. Final Website (Storefront):</strong></li>
+<li>វេបសាយពាណិជ្ជកម្មអេឡិចត្រូនិចម៉ូដសម្លៀកបំពាក់ទាន់សម័យ SN STORE ដែលមានរូបរាងប្រណីត ដំណើរការរលូន និងឆ្លើយតបគ្រប់ទំហំអេក្រង់ (100% Responsive)។</li>
+<li><strong>2. Final Admin Panel:</strong></li>
+<li>ផ្ទាំងគ្រប់គ្រង Backoffice Dashboard ពេញលេញសម្រាប់ម្ចាស់ហាង អាចគ្រប់គ្រងផលិតផល ស្តុក ការបញ្ជាទិញ និងការផ្ទៀងផ្ទាត់វិក្កយបត្របានយ៉ាងងាយស្រួល។</li>
+<li><strong>3. Database:</strong></li>
+<li>មូលដ្ឋានទិន្នន័យ <code>ecommerce</code> មាន ១៤ តារាង មានទិន្នន័យផលិតផល និងអតិថិជនពិតប្រាកដ រៀបចំឡើងតាមកម្រិត 3NF និងមាន Relational Integrity ខ្ពស់។</li>
+<li><strong>4. GitHub Repository:</strong></li>
+<li>Source Code ទាំងអស់ត្រូវបាន Push ឡើងទៅកាន់ GitHub ដោយមាន Commit History ពេញលេញ និងឯកសារ README.md យ៉ាងលម្អិត៖</li>
+</ul>
+<p class="doc-p">👉 <strong><a href="https://github.com/remsonich/E-Commerce_Webiste_Store" target="_blank">https://github.com/remsonich/E-Commerce_Webiste_Store</a></strong></p>
 <hr class="section-divider">
 <h2 class="doc-h2"><span class="h2-badge">§</span> 10. CONCLUSION (សេចក្តីសន្និដ្ឋាន)</h2>
-<h3 class="doc-h3">10.1 What Was Achieved (អ្វីដែលសម្រេចបាន)</h3>
 <ul class="doc-ul">
-<li>បានកសាងប្រព័ន្ធ E-Commerce ពេញលេញមួយពីដំណាក់កាល Planning រហូតដល់ Implementation ដោយជោគជ័យ ១០០%។</li>
+<li><strong>What was achieved (អ្វីដែលសម្រេចបាន):</strong></li>
+<li>បានកសាងប្រព័ន្ធ E-Commerce ពេញលេញមួយពីដំណាក់កាល Midterm 1 Planning រហូតដល់ Final Implementation ដោយជោគជ័យ ១០០%។</li>
 <li>អនុវត្តបានយ៉ាងខ្ជាប់ខ្ជួននូវគោលការណ៍ UI/UX ទំនើប, Clean Code, និងសុវត្ថិភាពទិន្នន័យ។</li>
 <li>រួមបញ្ចូលដំណោះស្រាយសម្រាប់ទីផ្សារកម្ពុជា រួមមានភាសាខ្មែរ Kantumruy Pro, KHQR Bakong Payment Flow, និងការជូនដំណឹងតាម Telegram។</li>
-</ul>
-<h3 class="doc-h3">10.2 Problems &amp; Challenges (បញ្ហាប្រឈម និងដំណោះស្រាយ)</h3>
-<ul class="doc-ul">
+<li><strong>Problems / Challenges (បញ្ហាប្រឈម និងដំណោះស្រាយ):</strong></li>
 <li><strong>បញ្ហា Rate Limiting Lockout:</strong> ដំបូងមានការចាក់សោពេលបញ្ចូល Email ខុសក្នុង Admin Login &amp;rarr; បានដោះស្រាយដោយអនុញ្ញាតឱ្យ Admin Sign In បានទាំង Username និង Email ព្រមទាំងកំណត់ Password ឯកភាព។</li>
 <li><strong>បញ្ហាទំហំអក្សរខ្មែរលើ Layout:</strong> ពាក្យខ្មែរវែងជាងភាសាអង់គ្លេសអាចធ្វើឱ្យខូចទម្រង់ប៊ូតុង &amp;rarr; បានដោះស្រាយដោយប្រើ Flexbox ជាមួយ <code>min-width</code> និង <code>Kantumruy Pro</code> font line-height ត្រឹមត្រូវ។</li>
 <li><strong>បញ្ហា Warning <code>session_start</code>:</strong> ជួបបញ្ហា Headers already sent នៅលើទំព័រ Customer Service &amp;rarr; បានដោះស្រាយដោយប្រើ Output Buffering (<code>ob_start()</code>) និងត្រួតពិនិត្យ <code>!headers_sent()</code> មុនហៅ <code>session_start()</code>។</li>
-</ul>
-<h3 class="doc-h3">10.3 Future Improvements (ទិសដៅអភិវឌ្ឍន៍បន្ត)</h3>
-<ul class="doc-ul">
+<li><strong>Future Improvements (ទិសដៅអភិវឌ្ឍន៍បន្ត):</strong></li>
 <li>ភ្ជាប់ទៅកាន់ Bakong Open API ផ្ទាល់ដើម្បីផ្ទៀងផ្ទាត់ការទូទាត់ប្រាក់បែប Real-Time Webhook (ជំនួសការ Upload វិក្កយបត្រដោយដៃ)។</li>
 <li>បង្កើត Progressive Web App (PWA) ដើម្បីឱ្យអតិថិជនអាច Install លើទូរស័ព្ទដៃដូចជា Native App។</li>
 <li>បន្ថែមមុខងារ Product Reviews &amp; Ratings ដើម្បីបង្កើនទំនុកចិត្តអតិថិជនបន្ថែមទៀត។</li>
