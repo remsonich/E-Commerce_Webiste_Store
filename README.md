@@ -19,8 +19,9 @@
   3. **CHHAI Sophea (ឆៃ សោភា)** — *Frontend Developer & UI/UX Designer*
   4. **SAO Ramorn (សៅ រ៉ាម៉ន)** — *Quality Assurance (QA) & System Testing*
 * **សៀវភៅគម្រោងពេញលេញ (Full Project Book):**
+  - 📕 **[PROJECT_BOOK.pdf](PROJECT_BOOK.pdf)** (ឯកសារសៀវភៅគម្រោងទម្រង់ PDF ពេញលេញ ១៨ ទំព័រ អាចបើកមើលលើ GitHub ឬទាញយកបានភ្លាមៗ)
   - 📖 **[PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md)** (ឯកសារផ្លូវការ ១០ ជំពូក តាមលំនាំគ្រូណែនាំ)
-  - 🌐 **[PROJECT_BOOK.html](PROJECT_BOOK.html)** (ទម្រង់ HTML អាចបើកក្នុង Browser ចុច `Ctrl + P` រក្សាទុកជា PDF ឬចម្លងចូល Word)
+  - 🌐 **[PROJECT_BOOK.html](PROJECT_BOOK.html)** (ទម្រង់ Standalone Web Book អាចបើកក្នុង Browser និងចុច `Ctrl + P`)
 
 ---
 
