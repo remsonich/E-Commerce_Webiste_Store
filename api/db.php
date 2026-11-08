@@ -96,7 +96,6 @@ if (!function_exists('applicationTableExists')) {
 
 if (!$conn->query("SET time_zone = '+07:00'")) {
     error_log('Could not set the application database time zone: ' . $conn->error);
-    die('Could not initialize the application database time zone.');
 }
 
 if (!function_exists('ensureProductStockColumn')) {
